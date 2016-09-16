@@ -65,7 +65,7 @@ body {
 h2{
 	font-size:34px;
 	color:#222222;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'FreeSerif', sans-serif;
 	font-weight:700;
 	letter-spacing: -1px;
 	margin:0 0 15px 0;
@@ -73,11 +73,10 @@ h2{
 	text-transform:uppercase;
 }
 h3{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'FreeSerif', sans-serif;
 	color:#222222;
-	font-size:16px;
+	font-size:17px;
 	margin:0 0 5px 0;
-	text-transform:uppercase;
 	font-weight:400;
 }
 h6{
@@ -89,7 +88,7 @@ h6{
 	margin:0 0 60px 0;
 }
 p{
-	line-height:24px;
+	line-height:23px;
 	margin:0;
 }
 
@@ -105,7 +104,7 @@ p{
 	margin:0 auto 35px;
 }
 .header h1{
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'FreeSerif',sans-serif;
 	font-size:37px;
 	font-weight:400;
 	letter-spacing: -1px;
@@ -122,7 +121,7 @@ p{
 }
 .we-create li{
 	display:inline-block;
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'FreeSerif',sans-serif;
 	font-size:14px;
 	color: #fff;
 	font-weight: 400;
@@ -148,7 +147,7 @@ color: #fff;
 	color:#fff !important;
 	font-size:16px;
 	font-weight:400;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'FreeSerif', sans-serif;
 	display:inline-block;
 	border-radius:3px;
 	text-transform:uppercase;
@@ -194,7 +193,7 @@ color: #fff;
 	display:inline-block;
 	color:#222222;
 	text-transform:uppercase;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'FreeSerif', sans-serif;
 	text-decoration: none;
 	line-height:20px;
 	margin: 4px 0px;
@@ -296,7 +295,7 @@ color: #fff;
 	color:#7cc576;
 	font-size:16px;
 	text-transform:uppercase;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'FreeSerif', sans-serif;
 	font-weight:400;
 	line-height:24px;
 	transition:all 0.3s ease-in-out;
@@ -334,7 +333,7 @@ color: #fff;
 	color:#222222;
 	border-radius:4px;
 	text-transform:uppercase;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'FreeSerif', sans-serif;
 	background:#f7f7f7;
 	margin-bottom:5px;
 	transition:all 0.3s ease-in-out;
@@ -508,7 +507,7 @@ border: 2px solid #fff;
     vertical-align: top;
 }
 .team-leader-box span{
-	margin-bottom:24px;
+	margin-bottom:10px;
 	display:block;
 }
 
@@ -600,7 +599,7 @@ border: 2px solid #fff;
 	text-align:center;
 }
 .business-talking h2{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'FreeSerif', sans-serif;
 	font-weight:700;
 	padding:0;
 	margin:20px 0 70px;
@@ -726,7 +725,7 @@ border: 2px solid #fff;
 	color:#ffffff;
 	font-size:14px;
 	text-transform:uppercase;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'FreeSerif', sans-serif;
 	font-weight:400;
 	border:0px;
 	transition:all 0.3s ease-in-out;
@@ -989,7 +988,7 @@ border: 2px solid #fff;
     padding: 0px;
 }
 .banner-finacial {
-	background: url(../img/finalcial.jpg) no-repeat center;
+	background: url(../img/finalcial.jpg) no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -1008,4 +1007,7 @@ border: 2px solid #fff;
     width: auto;
     top: -10px;
     position: relative;
+}
+.lead-description{
+	font-size: 14px;
 }
