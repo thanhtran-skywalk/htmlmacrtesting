@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
 
-<title>Homepage</title>
+<title>Macrgroup</title>
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
@@ -685,10 +685,20 @@
             </div>
         	<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
             	<div class="form">
-                	<input class="input-text" type="text" name="" value="Your Name *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                    <input class="input-text" type="text" name="" value="Your E-mail *" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-                	<textarea class="input-text text-area" cols="0" rows="0" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Your Message *</textarea>
-                    <input class="input-btn" type="submit" value="send message">
+                    <form id="form-contact">
+                        <input class="input-text contact-input" type="text" name="contactName" id="contactName" placeholder="Tên của Bạn *" />
+                        <input class="input-text contact-input" type="text" name="contactPhone" id="contactPhone" placeholder="Số điện thoại *" />
+                        <input class="input-text contact-input" type="text" name="contactMail" id="contactMail" placeholder="E-mail của Bạn *" />
+                        <textarea class="input-text text-area contact-input" name="contactMessage" id="contactMessage" cols="0" rows="0" placeholder="Nội dung liên hệ *"></textarea>
+                        <div class="captcha-confirm">
+                            <button name="submit" class="input-btn-captcha" onClick="refreshCaptcha();">mã khác</button>
+                            <img id="captcha_code" class="img-captcha" src="captcha_code.php" />
+                            <input class="input-text-captcha contact-input" type="text" name="captcha" id="captcha" placeholder="Mã xác nhận *" />
+                        </div>
+                       
+                        <input class="input-btn not-active" id="btn-submit-contact" type="submit" value="Gửi tới MACRGROUP" />
+                        <span class="result-contact-message" style="display: none;"></span>
+                    </form>
                 </div>	
             </div>
         </div>
