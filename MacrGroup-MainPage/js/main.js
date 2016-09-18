@@ -168,9 +168,9 @@ $(window).load(function(){
         }
 
     });
-
-    function refreshCaptcha() {
+    
+    $('.input-btn-captcha').click(function() {
       $("#captcha_code").attr('src','captcha_code.php');
-    }
+    });
   
 });

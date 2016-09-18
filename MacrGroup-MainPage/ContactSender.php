@@ -5,18 +5,23 @@
 	$phone = $_POST["contactPhone"];
 	$content = $_POST["contactMessage"];
 	$email = $_POST["contactMail"];
-	
-	$senderEmail = 'macrgroup.contact@gmail.com';
-	$senderPassword = 'dienthoaiiphone';
-	$subject = '[Macrgroup][Contact] Tên: ' + $name + ', Phone: ' + $phone + ', Email: ' + $mail;
-	$fromEmail = array('macrgroup.contact@gmail.com' => 'New Contact From Customer');
-	$toEmail = array('taidh@macrgroup.com');
 
-	$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")->setUsername($senderEmail)->setPassword($senderPassword);
+	if($_POST["captcha"] == $_SESSION["captcha_code"]){
+		$senderEmail = 'macrgroup.contact@gmail.com';
+		$senderPassword = 'dienthoaiiphone';
+		$subject = '[Macrgroup][Contact] Tên: ' + $name + ', Phone: ' + $phone + ', Email: ' + $mail;
+		$fromEmail = array('macrgroup.contact@gmail.com' => 'New Contact From Customer');
+		$toEmail = array('taidh@macrgroup.com');
 
-	$mailer = Swift_Mailer::newInstance($transport);
+		$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")->setUsername($senderEmail)->setPassword($senderPassword);
 
-	$message = Swift_Message::newInstance()->setSubject($subject)->setFrom($fromEmail)->setTo($toEmail)->setBody($content);
+		$mailer = Swift_Mailer::newInstance($transport);
 
-	$result = $mailer->send($message);
+		$message = Swift_Message::newInstance()->setSubject($subject)->setFrom($fromEmail)->setTo($toEmail)->setBody($content);
+
+		$result = $mailer->send($message);
+		print("1");
+	}else{
+		print("0");
+	}
 ?>
