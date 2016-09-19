@@ -109,6 +109,11 @@ $(window).load(function(){
       event.preventDefault();
     });
 
+    function isEmail(email) {
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+    }
+
     function validateContactForm() {
       var validateResult = true;
       if ($('#contactName').val().trim().length == 0){
@@ -116,6 +121,8 @@ $(window).load(function(){
       }else if($('#contactPhone').val().trim().length == 0){
         validateResult = false;
       }else if($('#contactMail').val().trim().length == 0){
+        validateResult = false;
+      }else if(!isEmail($('#contactMail').val())){
         validateResult = false;
       }else if($('#contactMessage').val().trim().length == 0){
         validateResult = false;
@@ -134,39 +141,41 @@ $(window).load(function(){
     });
 
     function resetForm() {
-      $('#contactName').val()
-      $('#contactPhone').val()
-      $('#contactMail').val()
-      $('#contactMessage').text()
+      $('#contactName').val('');
+      $('#contactPhone').val('');
+      $('#contactMail').val('');
+      $('#contactMessage').val('');
+	  $('#captcha').val('');
     }
 
     $("#form-contact").submit(function(event){
         event.preventDefault();
         $('#btn-submit-contact').addClass("not-active");
         $('.result-contact-message').hide();
+
         if(validateContactForm()){
-          var serializedData = $(this).serialize();
-          var request = $.ajax({url: "/ContactSender.php",  type: "post", data: serializedData});
-
-          request.done(function (response, textStatus, jqXHR){
-            console.log("Hooray, it worked!");
-            $('.result-contact-message').text('Cảm ơn Bạn đã liên lạc với chúng tôi!');
-            $('.result-contact-message').show();
-            resetForm();
-            $('#btn-submit-contact').removeClass("not-active");
-          });
-
-          request.fail(function (jqXHR, textStatus, errorThrown){
-            console.error(
-                "The following error occurred: "+
-                textStatus, errorThrown
-            );
-          });
+  			  var serializedData = $(this).serialize();
+  			  var request = $.ajax({url: "/ContactSender.php",
+      			type: "post",
+      			data: serializedData,
+      			success:function(data){
+      				if(data.indexOf('conctact_form_code_success') >= 0){
+      				    $('.result-contact-message').text('Cảm ơn Bạn đã liên lạc với chúng tôi!');
+      					  $('.result-contact-message').show();
+      					  $('#btn-submit-contact').removeClass("not-active");
+      					  $("#captcha_code").attr('src','captcha_code.php');
+      					  resetForm();
+      				}else{
+        					$('.result-contact-message').text('Bạn đã nhập sai mã xác nhận!');
+        					$('.result-contact-message').show();
+        					$("#captcha_code").attr('src','captcha_code.php');
+      				}
+      			}
+    		  });
         }else{
             $('.result-contact-message').text('Bạn vui lòng nhập đủ thông tin!');
             $('.result-contact-message').show();
         }
-
     });
     
     $('.input-btn-captcha').click(function() {
