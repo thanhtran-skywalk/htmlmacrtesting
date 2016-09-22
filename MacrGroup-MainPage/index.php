@@ -56,9 +56,9 @@
             <figure class="logo animated fadeInDown delay-07s">
                 <a href="#"><img src="img/logo/logo_150_white.png" height="130" width="130" alt=""></a> 
             </figure>   
-            <h1 class="animated fadeInDown delay-07s header-welcome">Welcome to MACRGROUP!</h1>
+            <h1 class="animated fadeInDown delay-07s header-welcome">Chào mừng bạn ghé thăm MACR's Brothers!</h1>
             <ul class="we-create animated fadeInUp delay-1s">
-                <li class="sub-welcome">“If someone offers you an amazing opportunity and you're not sure you can do it, say yes - then learn how to do it later” <br />- Richard Branson -</li>
+                <li class="sub-welcome">“Nếu một người nào đó trao cho bạn một cơ hội tuyệt vời, khi bạn còn chưa biết mình có làm được hay không, hãy nói có! Sau đó tìm cách thực hiện nó sau.” <br />- Richard Branson -</li>
             </ul>
                 <a class="link animated fadeInUp delay-1s" href="#">Tìm hiểu thêm...</a>
         </div>
@@ -70,7 +70,7 @@
             </figure>   
             <h1 class="animated fadeInDown delay-07s header-welcome">Khanh Diem Agrico</h1>
             <ul class="we-create animated fadeInUp delay-1s">
-                <li class="sub-welcome">“If someone offers you an amazing opportunity and you're not sure you can do it, say yes - then learn how to do it later" <br /> - Richard Branson -</li>
+                <li class="sub-welcome">“Cảm ơn đất mẹ đã cho ta thức ăn, nước uống và một nơi để trở về" <br /> - X -</li>
             </ul>
                 <a class="link animated fadeInUp delay-1s" href="#">Tìm hiểu thêm...</a>
         </div>
@@ -82,7 +82,7 @@
             </figure>   
             <h1 class="animated fadeInDown delay-07s header-welcome">Snowball Public Library</h1>
             <ul class="we-create animated fadeInUp delay-1s">
-                <li class="sub-welcome">“If someone offers you an amazing opportunity and you're not sure you can do it, say yes - then learn how to do it later"<br /> - Richard Branson -</li>
+                <li class="sub-welcome">“Xem công việc bạn làm như thể đó là tài sản duy nhất của gia đình bạn, một thứ phải hoạt động cho 50 năm tới và không bao giờ được bán đi."<br /> - Warren Buffett -</li>
             </ul>
                 <a class="link animated fadeInUp delay-1s" href="#">Tìm hiểu thêm...</a>
         </div>
@@ -94,7 +94,7 @@
 <nav class="main-nav-outer" id="test"><!--main-nav-start-->
 	<div class="container">
         <ul class="main-nav">
-        	<li><a href="#testimonial-carousel-header">Trang Chủ</a></li>
+        	<li><a href="#testimonial-carousel-header">Trang chủ</a></li>
             <li><a href="#service">Tư Vấn</a></li>
             <li><a href="#Portfolio">Đầu Tư</a></li>
             <li class="small-logo"><a href="#testimonial-carousel-header"><img class="menu-logo" src="img/logo/small-logo2.jpg" alt=""></a></li>
@@ -110,21 +110,21 @@
         <div class="overlay">
             <div class="container padding-top-large">
                 <h2 class="margin-top-big">Chúng tôi là ai?</h2>
-                <h6 style="margin-bottom:30px;">"Hãy cứ khát khao, hãy mãi dại khờ!" - Steve Job.</h6>
+                <h6 style="margin-bottom:30px;">"“Quality in a service or product is not what you put into it. It is what the client or customer gets out of it.” - Peter Drucker.</h6>
                 <div class="row">
                     <div class="col-md-7">
                         <div class="jumbo-text light-text margin-top-medium wow slideInLeft" data-wow-duration="2s">
                             KreFolio, A Full <strong class="bold-text" style="color: #e74c3c;">Service Digital Agency</strong>
                             That Help Our Clients Expand Their Digital Reach
                         </div>
-                        <div class="about-us-content wow slideInUp">Suzanne et Joseph étaient nés dans les deux premières années de leur arrivée à la colonie. Après la naissance de Suzanne, la mère abandonna l’enseignement d’état. Elle ne donna plus que des leçons particulières de français. Son mari avait été nommé directeur d’une école indigène et, disaient-elle, ils avaient vécu très largement malgré la charge de leurs enfants. Ces années-là furent sans conteste les meilleures de sa vie, des années de bonheur.  </div>
+                        <div class="about-us-content wow slideInUp">MACR.  </div>
                     </div>
                     <div class="col-md-5 text-right wow fadeInRight delay-02s">
                         <img src="img/logo/logo_460.png" alt="About Us Big Image" class="center-block img-responsive">
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <p class="margin-bottom-small wow slideInUp">Suzanne et Joseph étaient nés dans les deux premières années de leur arrivée à la colonie. Après la naissance de Suzanne, la mère abandonna l’enseignement d’état. Elle ne donna plus que des leçons particulières de français. Son mari avait été nommé directeur d’une école indigène et, disaient-elle, ils avaient vécu très largement malgré la charge de leurs enfants. Ces années-là furent sans conteste les meilleures de sa vie, des années de bonheur. </p>
+                <p class="margin-bottom-small wow slideInUp">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit. </p>
                 <div class="row margin-top-large">
                     <div class="col-md-8">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -502,7 +502,7 @@
         <h6>Đam mê - Quyết tâm - Sáng tạo - Tương tác - Truyền động lực - Hành động</h6>
         <div class="team-leader-block clearfix">
             <?php
-                $json_data = file_get_contents('teamdata.json');
+                $json_data = file_get_contents('/data/teamdata.json');
                 $data = json_decode($json_data, true);
                 for ($i = 0; $i < 10; $i++) {
              ?>
@@ -569,21 +569,25 @@
 	
         <div class="row">
         	<div class="col-lg-6 col-sm-7 wow fadeInLeft">
+                <?php
+                    $contact_data = file_get_contents('/data/contact.json');
+                    $contactdata = json_decode($contact_data, true);
+                ?>
             	<div class="contact-info-box address clearfix">
                 	<h3><i class=" icon-map-marker"></i>Địa chỉ:</h3>
-                	<span>Số 16, Đường số 4, Cư xá Bình Thới<br>Phường 8, Quận 11, TP.HCM</span>
+                	<span><?php echo $contactdata["address"]; ?></span>
                 </div>
                 <div class="contact-info-box phone clearfix">
                 	<h3><i class="fa-phone"></i>Điện thoại:</h3>
-                	<span>(+84)9 7175 8558</span>
+                	<span><?php echo $contactdata["phone"]; ?></span>
                 </div>
                 <div class="contact-info-box email clearfix">
                 	<h3><i class="fa-pencil"></i>Email:</h3>
-                	<span>taidh@macrgroup.com</span>
+                	<span><?php echo $contactdata["email"]; ?></span>
                 </div>
             	<div class="contact-info-box hours clearfix">
                 	<h3><i class="fa-clock-o"></i>Giờ làm việc:</h3>
-                	<span><strong>Thứ 2 - Thứ 6:</strong> 9:00 am - 5:30 pm<br><strong>thứ 7 - Chủ nhật:</strong> Vui lòng liên hệ hotline.</span>
+                	<span><strong>Thứ 2 - Thứ 6:</strong> <?php echo $contactdata["worktime_mon_fri"]; ?><br><strong>Thứ 7 - Chủ nhật:</strong> <?php echo $contactdata["worktime_sat_sun"]; ?></span>
                 </div>
                 <ul class="social-link">
                 	<li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
@@ -601,7 +605,7 @@
                         <input class="input-text contact-input" type="text" name="contactMail" id="contactMail" placeholder="E-mail của Bạn *" />
                         <textarea class="input-text text-area contact-input" name="contactMessage" id="contactMessage" cols="0" rows="0" placeholder="Nội dung liên hệ *"></textarea>
                         <div class="captcha-confirm">
-                            <img id="captcha_code" class="img-captcha" src="captcha_code.php" />
+                            <img id="captcha_code" class="img-captcha" src="/php/captcha_code.php" />
                             <input class="input-text-captcha contact-input" type="text" name="captcha" id="captcha" placeholder="Mã xác nhận *" />
                             <button type="button" class="input-btn-captcha">mã khác</button>
                         </div>
@@ -617,7 +621,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
-        <span class="copyright">Copyright © 2016 |  Make by <a href="#">Thanh Tran</a></span>
+        <span class="copyright">Copyright © 2016 |  Made by <a href="#">Thanh Tran</a></span>
     </div>
     <!-- 
         All links in the footer should remain intact. 

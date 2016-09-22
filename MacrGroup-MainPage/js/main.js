@@ -18,7 +18,7 @@ $(document).ready(function () {
 
   var testimonialCarouselHeader = $("#testimonial-carousel-header");
   testimonialCarouselHeader.owlCarousel({
-    autoPlay : 300000,
+    autoPlay : 3000,
     stopOnHover : true,
     slideSpeed  :  1000,
     paginationSpeed : 500,
@@ -155,7 +155,7 @@ $(window).load(function(){
 
         if(validateContactForm()){
   			  var serializedData = $(this).serialize();
-  			  var request = $.ajax({url: "/ContactSender.php",
+  			  var request = $.ajax({url: "/php/ContactSender.php",
       			type: "post",
       			data: serializedData,
       			success:function(data){
@@ -163,12 +163,12 @@ $(window).load(function(){
       				    $('.result-contact-message').text('Cảm ơn Bạn đã liên lạc với chúng tôi!');
       					  $('.result-contact-message').show();
       					  $('#btn-submit-contact').removeClass("not-active");
-      					  $("#captcha_code").attr('src','captcha_code.php');
+      					  $("#captcha_code").attr('src','/php/captcha_code.php');
       					  resetForm();
       				}else{
         					$('.result-contact-message').text('Bạn đã nhập sai mã xác nhận!');
         					$('.result-contact-message').show();
-        					$("#captcha_code").attr('src','captcha_code.php');
+        					$("#captcha_code").attr('src','/php/captcha_code.php');
       				}
       			}
     		  });
@@ -179,7 +179,7 @@ $(window).load(function(){
     });
     
     $('.input-btn-captcha').click(function() {
-      $("#captcha_code").attr('src','captcha_code.php');
+      $("#captcha_code").attr('src','/php/captcha_code.php');
     });
   
 });
