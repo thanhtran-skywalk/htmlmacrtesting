@@ -568,7 +568,7 @@ border: 2px solid #fff;
 .team-leader ul li a{
 	font-family: 'FontAwesome';
 	display:inline-block;
-	font-size:28px;
+	font-size:20px;
 	color:#fff;	
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
@@ -583,8 +583,8 @@ border: 2px solid #fff;
 .team-leader ul li a.fa-facebook:hover{
 	color:#3b5998;
 }
-.team-leader ul li a.fa-pinterest:hover{
-	color:#cb2026;
+.team-leader ul li a.lead-profile:hover{
+	color:#dd4b39;
 }
 .team-leader ul li a.fa-google-plus:hover{
 	color:#dd4b39;
@@ -627,7 +627,7 @@ border: 2px solid #fff;
 	font-size: 15px;
 	font-weight:400;
 	float:left;
-	width:102px;
+	width:115px;
 	margin-right:12px;
 	line-height:28px;
 }
@@ -760,8 +760,8 @@ border: 2px solid #fff;
 	background:url(../img/pw_maze_black_2X.png) left top repeat;
 }
 .footer-logo{
-	margin:15px auto 35px;
-	width: 76px;
+	margin:15px auto 15px;
+	width: 100px;
 }
 .copyright{
 	color:#cccccc;
@@ -990,6 +990,9 @@ border: 2px solid #fff;
 .about-us .overlay {
     background: rgba(238, 238, 238, 0.90);
 }
+.margin-top-small {
+    margin-top: 30px;
+}
 .margin-top-medium {
     margin-top: 40px;
 }
@@ -1057,4 +1060,45 @@ border: 2px solid #fff;
 	height:50px;
 	width:30%;
 	margin-bottom: 2px;
+}
+.modal .close {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #333;
+    opacity: 1;
+    height: 40px;
+    width: 40px;
+    color: #FFF;
+    font-size: 28px;
+    line-height: 45px;
+    outline: none;
+    z-index: 10;
+}
+.description.details{
+	text-align: justify;
+    padding-top: 30px;
+}
+.team-leader.details{
+	margin-top: 10%;
+}
+
+.modal-dialog.modal-lg{
+	width: 720px;
+}
+
+span.leader-details-description {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+li.li-leader-details {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.light-text.full-pos{
+	font-size: 14px;
+    font-weight: bold;
 }

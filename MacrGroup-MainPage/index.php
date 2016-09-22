@@ -3,7 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, maximum-scale=1">
-
+<meta name="description" content="Macrgroup Brothers JSC">
+<meta property="og:description" content="Macrgroup Brothers JSC">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Macrgroup">
+<meta property="og:url" content="http://www.macrgroup.com/">
+<meta property="og:title" content="Macrgroup">
+<meta property="og:image" content="http://www.macrgroup.com/img/logo/logo_460.png">
+	
 <title>Macrgroup</title>
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
@@ -47,9 +54,9 @@
     <header class="header banner-finacial" ><!--header-start-->
         <div class="container">
             <figure class="logo animated fadeInDown delay-07s">
-                <a href="#"><img src="img/logo/logo_150.png" height="130" width="130" alt=""></a> 
+                <a href="#"><img src="img/logo/logo_150_white.png" height="130" width="130" alt=""></a> 
             </figure>   
-            <h1 class="animated fadeInDown delay-07s header-welcome">Welcome to MACRGROUP Brothers</h1>
+            <h1 class="animated fadeInDown delay-07s header-welcome">Welcome to MACRGROUP!</h1>
             <ul class="we-create animated fadeInUp delay-1s">
                 <li class="sub-welcome">“If someone offers you an amazing opportunity and you're not sure you can do it, say yes - then learn how to do it later” <br />- Richard Branson -</li>
             </ul>
@@ -59,7 +66,7 @@
     <header class="header banner-coffee"><!--header-start-->
         <div class="container">
             <figure class="logo animated fadeInDown delay-07s">
-                <a href="#"><img src="img/logo/logo_150.png" height="130" width="130" alt=""></a> 
+                <a href="#"><img src="img/logo/logo_150_dark_solid.png" height="130" width="130" alt=""></a> 
             </figure>   
             <h1 class="animated fadeInDown delay-07s header-welcome">Khanh Diem Agrico</h1>
             <ul class="we-create animated fadeInUp delay-1s">
@@ -71,7 +78,7 @@
     <header class="header banner-library"><!--header-start-->
         <div class="container">
             <figure class="logo animated fadeInDown delay-07s">
-                <a href="#"><img src="img/logo/logo_150.png" height="130" width="130"  alt=""></a> 
+                <a href="#"><img src="img/logo/logo_150_dark.png" height="130" width="130"  alt=""></a> 
             </figure>   
             <h1 class="animated fadeInDown delay-07s header-welcome">Snowball Public Library</h1>
             <ul class="we-create animated fadeInUp delay-1s">
@@ -110,22 +117,14 @@
                             KreFolio, A Full <strong class="bold-text" style="color: #e74c3c;">Service Digital Agency</strong>
                             That Help Our Clients Expand Their Digital Reach
                         </div>
-                        <div class="about-us-content wow slideInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  tempor incididunt ut labore et dolore magna aliqua. tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. </div>
+                        <div class="about-us-content wow slideInUp">Suzanne et Joseph étaient nés dans les deux premières années de leur arrivée à la colonie. Après la naissance de Suzanne, la mère abandonna l’enseignement d’état. Elle ne donna plus que des leçons particulières de français. Son mari avait été nommé directeur d’une école indigène et, disaient-elle, ils avaient vécu très largement malgré la charge de leurs enfants. Ces années-là furent sans conteste les meilleures de sa vie, des années de bonheur.  </div>
                     </div>
                     <div class="col-md-5 text-right wow fadeInRight delay-02s">
                         <img src="img/logo/logo_460.png" alt="About Us Big Image" class="center-block img-responsive">
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <p class="margin-bottom-small wow slideInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="margin-bottom-small wow slideInUp">Suzanne et Joseph étaient nés dans les deux premières années de leur arrivée à la colonie. Après la naissance de Suzanne, la mère abandonna l’enseignement d’état. Elle ne donna plus que des leçons particulières de français. Son mari avait été nommé directeur d’une école indigène et, disaient-elle, ils avaient vécu très largement malgré la charge de leurs enfants. Ces années-là furent sans conteste les meilleures de sa vie, des années de bonheur. </p>
                 <div class="row margin-top-large">
                     <div class="col-md-8">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -144,7 +143,7 @@
                                 </div> <!-- *** end panel-heading *** -->
                                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer far.
+                                      Suzanne et Joseph étaient nés dans les deux premières années de leur arrivée à la colonie. Après la naissance de Suzanne, la mère abandonna l’enseignement d’état. Elle ne donna plus que des leçons particulières de français. Son mari avait été nommé directeur d’une école indigène et, disaient-elle, ils avaient vécu très largement malgré la charge de leurs enfants. Ces années-là furent sans conteste les meilleures de sa vie, des années de bonheur. 
                                     </div>
                                 </div> <!-- *** end collapsed item *** -->
                             </div> <!-- *** end panel *** -->
@@ -502,147 +501,58 @@
         <h2>Ban Lãnh Đạo</h2>
         <h6>Đam mê - Quyết tâm - Sáng tạo - Tương tác - Truyền động lực - Hành động</h6>
         <div class="team-leader-block clearfix">
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-03s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team/anhhao.png" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-03s">Hảo Lâm</h3>
-                <span class="wow fadeInDown delay-03s">Chairman</span>
-                <p class="wow fadeInDown delay-03s lead-description">Kỹ sư điện tự động hoá ĐH Mỏ-Địa chất HN. Chuyên gia máy móc thiết bị và cơ khí tự động hoá.</p>
-            </div>
+            <?php
+                $json_data = file_get_contents('teamdata.json');
+                $data = json_decode($json_data, true);
+                for ($i = 0; $i < 10; $i++) {
+             ?>
 			<div class="team-leader-box">
                 <div class="team-leader wow fadeInDown delay-09s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team/baomanh.png" alt="">
+                    <?php echo '<div class="team-leader-shadow" data-toggle="modal" data-target="#team-member-'.$i.'"><a href="#"></a></div>'; ?> 
+
+                    <?php echo '<img src="img/team/'.$data[$i]["picture"].'" alt="">'; ?>
                     <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
+                       <li><?php echo '<a href="#" data-toggle="modal" class="lead-profile" data-target="#team-member-'.$i.'">Thông tin...</a>'; ?> </li>
                     </ul>
                 </div>
-                <h3 class="wow fadeInDown delay-09s">Bảo Mạnh</h3>
-                <span class="wow fadeInDown delay-09s">Technical Director</span>
-                <p class="wow fadeInDown delay-03s lead-description">Kỹ sư xây dựng Đại Học Bách Khoa TP.HCM. Giám sát công trình và định giá xây dựng.</p>
+                <h3 class="wow fadeInDown delay-09s"><?php echo $data[$i]["nickname"]; ?></h3>
+                <span class="wow fadeInDown delay-09s"><?php echo $data[$i]["position"]; ?></span>
             </div>
-            <div class="team-leader-box">
-                <div class="team-leader  wow fadeInDown delay-06s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team/taidoan.png" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-06s">Tài Đoàn</h3>
-                <span class="wow fadeInDown delay-06s">CEO</span>
-                <p class="wow fadeInDown delay-03s lead-description">Cử nhân thẩm định giá ĐH Kinh Tế TP.HCM. Người truyền cảm hứng và hỗ trợ cộng đồng.</p>
-            </div>
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-09s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team/haihien.png" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-09s">Hải Hiền</h3>
-                <span class="wow fadeInDown delay-09s">Director of Snowball</span>
-                <p class="wow fadeInDown delay-03s lead-description">Cử nhân thẩm định giá ĐH Kinh Tế TP.HCM. Nhà báo tự do. Chuyên gia kiểm toán và quỹ đầu tư.</p>
-            </div>
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-09s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team/baonguyen.png" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-09s">Bảo Nguyên</h3>
-                <span class="wow fadeInDown delay-09s">CEO Assistant</span>
-                <p class="wow fadeInDown delay-03s lead-description">Cử nhân thẩm định giá ĐH Kinh Tế TP.HCM. Chuyên gia hoạch định chiến lược và quản trị.</p>
-            </div>
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-03s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team/duchanh.png" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-03s">Đức Hạnh</h3>
-                <span class="wow fadeInDown delay-03s">Business Manager</span>
-                <p class="wow fadeInDown delay-03s lead-description">Cử nhân thẩm định giá ĐH Kinh Tế TP.HCM. Quản lý tiếp thị và quan hệ khách hàng.</p>
-            </div>
-            <div class="team-leader-box">
-                <div class="team-leader  wow fadeInDown delay-06s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team/haitruong.png" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-06s">Hải Trường</h3>
-                <span class="wow fadeInDown delay-06s">Project Manager</span>
-                <p class="wow fadeInDown delay-03s lead-description">Cử nhân thẩm định giá ĐH Kinh Tế TP.HCM. Quản trị rủi ro và quản lý dự án.</p>
-            </div>
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-03s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team/kimloan.png" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-03s">Kim Loan</h3>
-                <span class="wow fadeInDown delay-03s">M&A Manager</span>
-                <p class="wow fadeInDown delay-03s lead-description">Cử nhân Ngoại thương UEH. M.Sc - Magdeburg University. Tư vấn tái cấu trúc, M&A</p>
-            </div>
-              <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-03s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team/nhanphan.png" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-03s">Nhân Phan</h3>
-                <span class="wow fadeInDown delay-03s">Appraisal Manager</span>
-                <p class="wow fadeInDown delay-03s lead-description">Cử nhân thẩm định giá ĐH Kinh Tế TP.HCM. Trainer thẩm định giá, R&D</p>
-            </div>
-            
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-03s"> 
-                    <div class="team-leader-shadow"><a href="#"></a></div>
-                    <img src="img/team/quangchuoi.png" alt="">
-                    <ul>
-                        <li><a href="#" class="fa-twitter"></a></li>
-                        <li><a href="#" class="fa-facebook"></a></li>
-                        <li><a href="#" class="fa-google-plus"></a></li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-03s">Tony Phạm</h3>
-                <span class="wow fadeInDown delay-03s">Purchasing Manager</span>
-                <p class="wow fadeInDown delay-03s lead-description">Cử nhân thẩm định giá ĐH Kinh Tế TP.HCM. Quản lý chi phí và quản trị chuỗi cung ứng.</p>
-            </div>
+            <?php echo '<div class="modal fade contact-form" id="team-member-'.$i.'" tabindex="-1" role="dialog" aria-labelledby="team-member" aria-hidden="true">'; ?>
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="modal-body member-info">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-5">
+                                            <figure>
+                                                <div class="team-leader details"> 
+								                    <?php echo '<img src="img/team/'.$data[$i]["picture"].'" alt="">'; ?>
+								                </div>	
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7">
+                                            <div class="description details">
+                                                <h3><strong class="bold-text"><?php echo $data[$i]["realname"]; ?></strong></h3>
+                                                <div class="light-text full-pos"><?php echo $data[$i]["full"]; ?></div>
+                                                <div class="about margin-top-small">
+                                                	<ul style="padding-left: 19px;">
+                                                		<li class="li-leader-details"><span class="leader-details-description">Học vấn:</span><?php echo $data[$i]["education"]; ?></li>
+                                                		<li class="li-leader-details"><span class="leader-details-description">Chuyên môn:</span><?php echo $data[$i]["major"]; ?></li>
+                                                		<li class="li-leader-details"><span class="leader-details-description">Email:</span><?php echo $data[$i]["email"]; ?> </li>
+                                                	</ul>
+                                                </div>
+                                                
+                                            </div> <!-- *** end description *** -->
+                                        </div> <!-- *** end col-md-7 *** -->
+                                    </div> <!-- *** end row *** -->
+                                </div> <!-- *** end modal-body *** -->
+                            </div> <!-- *** end modal-content *** -->
+                        </div> <!-- *** end modal-dialog *** -->
+                </div> <!-- *** end Contact Form modal *** -->
+                <?php } ?>
         </div>
     </div>
 </section><!--main-section team-end-->
@@ -660,20 +570,20 @@
         <div class="row">
         	<div class="col-lg-6 col-sm-7 wow fadeInLeft">
             	<div class="contact-info-box address clearfix">
-                	<h3><i class=" icon-map-marker"></i>Address:</h3>
+                	<h3><i class=" icon-map-marker"></i>Địa chỉ:</h3>
                 	<span>Số 16, Đường số 4, Cư xá Bình Thới<br>Phường 8, Quận 11, TP.HCM</span>
                 </div>
                 <div class="contact-info-box phone clearfix">
-                	<h3><i class="fa-phone"></i>Phone:</h3>
+                	<h3><i class="fa-phone"></i>Điện thoại:</h3>
                 	<span>(+84)9 7175 8558</span>
                 </div>
                 <div class="contact-info-box email clearfix">
-                	<h3><i class="fa-pencil"></i>email:</h3>
+                	<h3><i class="fa-pencil"></i>Email:</h3>
                 	<span>taidh@macrgroup.com</span>
                 </div>
             	<div class="contact-info-box hours clearfix">
-                	<h3><i class="fa-clock-o"></i>Hours:</h3>
-                	<span><strong>Monday - Friday:</strong> 9am - 17h30pm<br><strong>Saturday - Sunday:</strong> Vui lòng liên hệ hotline.</span>
+                	<h3><i class="fa-clock-o"></i>Giờ làm việc:</h3>
+                	<span><strong>Thứ 2 - Thứ 6:</strong> 9:00 am - 5:30 pm<br><strong>thứ 7 - Chủ nhật:</strong> Vui lòng liên hệ hotline.</span>
                 </div>
                 <ul class="social-link">
                 	<li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
@@ -707,7 +617,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
-        <span class="copyright">Copyright © 2015 | <a href="http://bootstraptaste.com/">Bootstrap Themes</a> by BootstrapTaste</span>
+        <span class="copyright">Copyright © 2016 |  Make by <a href="#">Thanh Tran</a></span>
     </div>
     <!-- 
         All links in the footer should remain intact. 

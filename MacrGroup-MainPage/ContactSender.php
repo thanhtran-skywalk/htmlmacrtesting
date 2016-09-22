@@ -7,10 +7,10 @@
 		$phone = $_POST["contactPhone"];
 		$content = $_POST["contactMessage"];
 		$email = $_POST["contactMail"];
-		
+
 		$senderEmail = "macrgroup.contact@gmail.com";
 		$senderPassword = "dienthoaiiphone";
-		$subject = "[Macrgroup][Contact] Tên: " + $name + ", Phone: " + $phone + ", Email: " + $email;
+		$subject = "[Macrgroup][New Contact] Tên: ".$name.", Phone: ".$phone.", Email: ".$email;
 
 		$fromEmail = array("macrgroup.contact@gmail.com" => "Macrgroup Contact Mailer");
 		$toEmail = array("taidh@macrgroup.com");

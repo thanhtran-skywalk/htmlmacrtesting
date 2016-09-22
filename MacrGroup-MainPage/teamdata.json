@@ -1,0 +1,102 @@
+[
+  {
+    "nickname": "Hảo Lâm",
+    "realname": "Lâm Vĩnh Hảo",
+    "picture": "anhhao.png",
+    "full": "Chủ tịch Hội đồng quản trị kiêm Cố vấn định giá máy móc thiết bị và dự án sản xuất",
+    "position": "Chủ tịch HĐQT.",
+    "education": "Kỹ sư điện tự động hoá ĐH Mỏ-Địa chất HN.",
+    "major": "Cố vấn định giá máy móc thiết bị và thẩm định dự án sản xuất",
+    "email": "haolv@macrgroup.com"
+  },
+  {
+    "nickname": "Bảo Mạnh",
+    "realname": "Dương Huy Bảo",
+    "picture": "baomanh.png",
+    "full": "Giám đốc Định giá xây dựng và lập dự toán",
+    "position": "GĐ kỹ thuật",
+    "education": "Kỹ sư xây dựng Đại Học Bách Khoa TP.HCM.",
+    "major": "Định giá xây dựng và giám sát công trình.",
+    "email": "baodh@macrgroup.com"
+  },
+  {
+    "nickname": "Tài Đoàn",
+    "realname": "Đoàn Hưng Tài",
+    "picture": "taidoan.png",
+    "full": "Giám đốc điều hành Macrgroup",
+    "position": "CEO",
+    "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
+    "major": "Thẩm định giá. Người hướng dẫn, hỗ trợ, kiểm soát và truyền cảm hứng.",
+    "email": "taidh@macrgroup.com"
+  },
+  {
+    "nickname": "Hiển Hài",
+    "realname": "Nguyễn Hải Hiền",
+    "picture": "haihien.png",
+    "full": "Giám đốc Quỹ đầu tư Snowball kiêm Cố vấn đầu tư và Kiểm toán",
+    "position": "GĐ Quỹ Snowball.",
+    "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
+    "major": "Thẩm định giá. Cố vấn đầu tư. Nhà báo tự do, chuyên gia kiểm toán và quỹ đầu tư.",
+    "email": "hiennh@macrgroup.com"
+  },
+  {
+    "nickname": "Đức Hạnh",
+    "realname": "Trương Đức Hạnh",
+    "picture": "duchanh.png",
+    "full": "Giám đốc Kinh doanh. Giám đốc Dự án Du lịch Đức Hạnh.",
+    "position": "Giám đốc Kinh doanh.",
+    "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
+    "major": "Thẩm định giá. Quản lý tiếp thị và quan hệ khách hàng.",
+    "email": "hanhtd@macrgroup.com"
+  },
+  {
+    "nickname": "Bảo Nguyên",
+    "realname": "Nguyễn Lưu Bảo Nguyên",
+    "picture": "baonguyen.png",
+    "full": "Trưởng phòng Kế hoạch và Nhân sự. Trợ lý Giám đốc điều hành.",
+    "position": "T.P Nhân sự",
+    "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
+    "major": "Thẩm định giá. Chuyên gia hoạch định chiến lược và quản trị nhân sự.",
+    "email": "nguyennlb@macrgroup.com"
+  },
+  {
+    "nickname": "Kim Loan",
+    "realname": "Huỳnh Thị Kim Loan",
+    "picture": "kimloan.png",
+    "full": "Trưởng phòng Tư vấn M&A.",
+    "position": "T.P M&A",
+    "education": "Cử nhân Ngoại thương UEH. Thạc sỹ M.Sc - Magdeburg University, CHLB Đức.",
+    "major": "ThS. Quản trị Kinh doanh. Tư vấn tái cấu trúc, dự án và M&A",
+    "email": "loanhtk@macrgroup.com"
+  },
+  {
+    "nickname": "Nhân Phan",
+    "realname": "Phan Thị Hiền Nhân",
+    "picture": "nhanphan.png",
+    "full": "Trưởng phòng Định giá.",
+    "position": "T.P Nghiệp vụ",
+    "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
+    "major": "Thẩm định giá. Hướng dẫn, đào tạo, hỗ trợ, nghiên cứu và quản lý",
+    "email": "nhanpth@macrgroup.com"
+  },
+  {
+    "nickname": "Hải Trường",
+    "realname": "Nguyễn Hải Trường",
+    "picture": "haitruong.png",
+    "full": "P.P Định giá. Giám đốc Dự án Trái cây Hải Trường.",
+    "position": "P.P Nghiệp vụ",
+    "education": "Cử nhân thẩm định giá ĐH Kinh Tế TP.HCM.",
+    "major": "Thẩm định giá. Quản trị rủi ro và thẩm định dự án.",
+    "email": "truongnh@macrgroup.com"
+  },
+  {
+    "nickname": "Tony Phạm",
+    "realname": "Phạm Duy Quang",
+    "picture": "quangchuoi.png",
+    "full": "Phó phòng Định giá. Giám đốc Chuỗi cửa hàng cafe Tony",
+    "position": "P.P Nghiệp vụ",
+    "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
+    "major": "Thẩm định giá. Chuyên trách Bất động sản, máy móc thiết bị. Quản trị cung ứng và mua hàng.",
+    "email": "quangpd@macrgroup.com"
+  }
+]
