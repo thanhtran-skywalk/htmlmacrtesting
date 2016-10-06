@@ -346,7 +346,7 @@ color: #fff;
 	text-decoration:none;
 }
 
-.portfolioContainer{
+.portfolioContainer, .dautuContainer{
 	margin:0 auto;
 	padding-left:15px;
 }
@@ -802,7 +802,7 @@ border: 2px solid #fff;
 	color: #7cc576 !important;
 }
 
-.portfolioContainer{
+.portfolioContainer, .dautuContainer{
 	max-width: 1140px;
 }
 
@@ -1101,4 +1101,11 @@ li.li-leader-details {
 .light-text.full-pos{
 	font-size: 14px;
     font-weight: bold;
+}
+.panel-title > a:hover, .panel-title > a:visited, .panel-title > a:active, .panel-title > a:link {
+    text-decoration: none;
+}
+.col-md-8-change{
+	padding: 0px 10px;
+	margin-bottom: 20px;
 }

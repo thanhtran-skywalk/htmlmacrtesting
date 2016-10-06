@@ -3,7 +3,7 @@
     "nickname": "Hảo Lâm",
     "realname": "Lâm Vĩnh Hảo",
     "picture": "anhhao.png",
-    "full": "Chủ tịch Hội đồng quản trị kiêm Cố vấn định giá máy móc thiết bị và dự án sản xuất",
+    "full": "Chủ tịch Hội đồng quản trị",
     "position": "Chủ tịch HĐQT.",
     "education": "Kỹ sư điện tự động hoá ĐH Mỏ-Địa chất HN.",
     "major": "Cố vấn định giá máy móc thiết bị và thẩm định dự án sản xuất",
@@ -23,10 +23,10 @@
     "nickname": "Tài Đoàn",
     "realname": "Đoàn Hưng Tài",
     "picture": "taidoan.png",
-    "full": "Giám đốc điều hành Macrgroup",
+    "full": "Giám đốc điều hành MACRGROUP",
     "position": "CEO",
     "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
-    "major": "Thẩm định giá. Người hướng dẫn, hỗ trợ, kiểm soát và truyền cảm hứng.",
+    "major": "Chuyên ngành Thẩm định giá. Người truyền cảm hứng tại MACRGROUP và hỗ trợ cộng đồng tại hệ thống thư viện sách giấy miễn phí cho học sinh miền núi - Thư viện Cộng đồng SPL. Kiêm nhiệm: Thợ rang xay cà phê - cafe Tony Phạm.",
     "email": "taidh@macrgroup.com"
   },
   {
@@ -36,7 +36,7 @@
     "full": "Giám đốc Quỹ đầu tư Snowball kiêm Cố vấn đầu tư và Kiểm toán",
     "position": "GĐ Quỹ Snowball.",
     "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
-    "major": "Thẩm định giá. Cố vấn đầu tư. Nhà báo tự do, chuyên gia kiểm toán và quỹ đầu tư.",
+    "major": "Chuyên ngành Thẩm định giá. Cố vấn đầu tư. Nhà báo tự do, chuyên gia kiểm toán và quỹ đầu tư.",
     "email": "hiennh@macrgroup.com"
   },
   {
@@ -46,17 +46,17 @@
     "full": "Giám đốc Kinh doanh. Giám đốc Dự án Du lịch Đức Hạnh.",
     "position": "Giám đốc Kinh doanh.",
     "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
-    "major": "Thẩm định giá. Quản lý tiếp thị và quan hệ khách hàng.",
+    "major": "Chuyên ngành Thẩm định giá. Quản lý tiếp thị và quan hệ khách hàng. Kiêm nhiệm: Dự án khách sạn văn hóa Đức Hạnh",
     "email": "hanhtd@macrgroup.com"
   },
   {
     "nickname": "Bảo Nguyên",
     "realname": "Nguyễn Lưu Bảo Nguyên",
     "picture": "baonguyen.png",
-    "full": "Trưởng phòng Kế hoạch và Nhân sự. Trợ lý Giám đốc điều hành.",
+    "full": "Trưởng phòng Kế hoạch và Nhân sự.",
     "position": "T.P Nhân sự",
     "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
-    "major": "Thẩm định giá. Chuyên gia hoạch định chiến lược và quản trị nhân sự.",
+    "major": "Chuyên ngành Thẩm định giá. Chuyên gia hoạch định chiến lược và quản trị nhân sự. Kiêm nhiệm: P. Giám đốc CT TNHH Nông nghiệp K&Brothers",
     "email": "nguyennlb@macrgroup.com"
   },
   {
@@ -76,27 +76,27 @@
     "full": "Trưởng phòng Định giá.",
     "position": "T.P Nghiệp vụ",
     "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
-    "major": "Thẩm định giá. Hướng dẫn, đào tạo, hỗ trợ, nghiên cứu và quản lý",
+    "major": "Chuyên ngành Thẩm định giá. Hướng dẫn, đào tạo, hỗ trợ, nghiên cứu về thẩm định giá",
     "email": "nhanpth@macrgroup.com"
   },
   {
     "nickname": "Hải Trường",
     "realname": "Nguyễn Hải Trường",
     "picture": "haitruong.png",
-    "full": "P.P Định giá. Giám đốc Dự án Trái cây Hải Trường.",
-    "position": "P.P Nghiệp vụ",
-    "education": "Cử nhân thẩm định giá ĐH Kinh Tế TP.HCM.",
-    "major": "Thẩm định giá. Quản trị rủi ro và thẩm định dự án.",
+    "full": "Phó Phòng Định giá. Chuyên trách Dự án và KCS.",
+    "position": "P.P Định giá",
+    "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
+    "major": "Chuyên ngành Thẩm định giá. Tái thẩm định tài sản đảm bảm. Kiêm nhiệm: Giám đốc dự án trái cây Hải Trường",
     "email": "truongnh@macrgroup.com"
   },
   {
     "nickname": "Tony Phạm",
     "realname": "Phạm Duy Quang",
     "picture": "quangchuoi.png",
-    "full": "Phó phòng Định giá. Giám đốc Chuỗi cửa hàng cafe Tony",
-    "position": "P.P Nghiệp vụ",
+    "full": "Phó phòng Định giá. Chuyên trách Máy móc thiết bị và Bất động sản",
+    "position": "P.P Định giá",
     "education": "Cử nhân Kinh tế - ĐH Kinh Tế TP.HCM.",
-    "major": "Thẩm định giá. Chuyên trách Bất động sản, máy móc thiết bị. Quản trị cung ứng và mua hàng.",
+    "major": "Chuyên ngành Thẩm định giá. Chuyên trách Bất động sản, máy móc thiết bị. Quản trị cung ứng và mua hàng. Kiêm nhiệm: Giám đốc Quán cà phê Tony Phạm",
     "email": "quangpd@macrgroup.com"
   }
 ]

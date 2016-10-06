@@ -61,6 +61,11 @@ $(window).load(function(){
       colW = 375,
       columns = null;
 
+  var $containerdautu = $('.dautuContainer'),
+      $bodydautu = $('body'),
+      colWdautu = 375,
+      columnsdautu = null;
+
   
   $container.isotope({
     // disable window resizing
@@ -69,10 +74,20 @@ $(window).load(function(){
       columnWidth: colW
     }
   });
+
+  $containerdautu.isotope({
+    // disable window resizing
+    resizable: true,
+    masonry: {
+      columnWidth: colWdautu
+    }
+  });
+  
   
   $(window).smartresize(function(){
     // check if columns has changed
     var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+    var currentColumnsdautu = Math.floor( ( $bodydautu.width() -30 ) / colWdautu );
     if ( currentColumns !== columns ) {
       // set new column count
       columns = currentColumns;
@@ -80,8 +95,16 @@ $(window).load(function(){
       $container.width( columns * colW )
         .isotope('reLayout');
     }
+    if ( currentColumnsdautu !== columnsdautu ) {
+      // set new column count
+      columnsdautu = currentColumnsdautu;
+      // apply width to container manually, then trigger relayout
+      $containerdautu.width( columnsdautu * colWdautu )
+        .isotope('reLayout');
+    }
     
   }).smartresize(); // trigger resize to set container width
+  
   $('.portfolioFilter a').click(function(){
         $('.portfolioFilter .current').removeClass('current');
         $(this).addClass('current');
@@ -93,6 +116,21 @@ $(window).load(function(){
          });
          return false;
     });
+
+   $('.dautuFilter a').click(function(){
+        $('.dautuFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $containerdautu.isotope({
+      
+            filter: selector,
+         });
+         return false;
+    });
+
+  $( "#macr-about-macr-tap" ).trigger( "click" );
+  $( "#macr-dautu-tap" ).trigger( "click" );
 
   $('.main-nav li a').bind('click',function(event){
       var $anchor = $(this);
@@ -155,7 +193,7 @@ $(window).load(function(){
 
         if(validateContactForm()){
   			  var serializedData = $(this).serialize();
-  			  var request = $.ajax({url: "/php/ContactSender.php",
+  			  var request = $.ajax({url: "php/ContactSender.php",
       			type: "post",
       			data: serializedData,
       			success:function(data){
@@ -163,12 +201,12 @@ $(window).load(function(){
       				    $('.result-contact-message').text('Cảm ơn Bạn đã liên lạc với chúng tôi!');
       					  $('.result-contact-message').show();
       					  $('#btn-submit-contact').removeClass("not-active");
-      					  $("#captcha_code").attr('src','/php/captcha_code.php');
+      					  $("#captcha_code").attr('src','php/captcha_code.php');
       					  resetForm();
       				}else{
         					$('.result-contact-message').text('Bạn đã nhập sai mã xác nhận!');
         					$('.result-contact-message').show();
-        					$("#captcha_code").attr('src','/php/captcha_code.php');
+        					$("#captcha_code").attr('src','php/captcha_code.php');
       				}
       			}
     		  });
@@ -179,7 +217,7 @@ $(window).load(function(){
     });
     
     $('.input-btn-captcha').click(function() {
-      $("#captcha_code").attr('src','/php/captcha_code.php');
+      $("#captcha_code").attr('src','php/captcha_code.php');
     });
   
 });
