@@ -58,9 +58,9 @@
             </figure>   
             <h1 class="animated fadeInDown delay-07s header-welcome">WELL COME TO MACRGROUP BROTHERS!</h1>
             <ul class="we-create animated fadeInUp delay-1s">
-                <li class="sub-welcome">“Nếu một người nào đó trao cho bạn một cơ hội tuyệt vời, khi bạn còn chưa biết mình có làm được hay không, hãy nói có! Sau đó tìm cách thực hiện nó sau.” <br />- Richard Branson -</li>
+                <li class="sub-welcome">“If someone offers you an amazing opportunity and you're not sure you can do it, say yes - then learn how to do it later.” <br />- Richard Branson -</li>
             </ul>
-                <a class="link animated fadeInUp delay-1s" href="#">Tìm hiểu thêm...</a>
+                <a class="link animated fadeInUp delay-1s" href="/macr">Tìm hiểu thêm...</a>
         </div>
     </header><!--header-end-->
     <header class="header banner-coffee"><!--header-start-->
@@ -72,7 +72,7 @@
             <ul class="we-create animated fadeInUp delay-1s">
                 <li class="sub-welcome">“Chúng tôi có thể nỗ lực để mất tiền, thậm chí rất nhiều tiền, nhưng chúng tôi không thể để mất danh tiếng, thậm chí chỉ một chút danh tiếng. Cần 20 năm để xây dựng danh tiếng nhưng chỉ cần 5 phút là có thể hủy hoại nó." <br /> - Warren Buffett -</li>
             </ul>
-                <a class="link animated fadeInUp delay-1s" href="#">Tìm hiểu thêm...</a>
+                <a class="link animated fadeInUp delay-1s" href="/macr">Tìm hiểu thêm...</a>
         </div>
         </header><!--header-end-->
     <header class="header banner-coffee"><!--header-start-->
@@ -120,11 +120,11 @@
         <ul class="main-nav">
             <li><a href="#testimonial-carousel-header">Trang chủ</a></li>
             <li><a href="#id-macr">MACR</a></li>
-            <li><a href="#id-dautu">GROUP</a></li>
+            <li><a href="#id-dautu">ĐẦU TƯ</a></li>
             <li class="small-logo"><a href="#testimonial-carousel-header"><img class="menu-logo" src="img/logo/small-logo2.jpg" alt=""></a></li>
-            <li><a href="#testimonial">BROTHERS</a></li>
-            <li><a href="#team">CORE TEAM</a></li>
-            <li><a href="#contact">Liên Hệ</a></li>
+            <li><a href="#testimonial">TIN TỨC</a></li>
+            <li><a href="#team">CHÚNG TÔI</a></li>
+            <li><a href="#contact">LIÊN HỆ</a></li>
         </ul>
         <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
     </div>
@@ -254,9 +254,14 @@
     </div>
     <div class="portfolioContainer wow fadeInUp delay-04s">
                 <div class=" Portfolio-box about-macr">
-                    <a href="#"><img src="img/macr_intro.jpg" alt=""></a>   
+                    <a href="/macr/index.php#nav-introduce"><img src="img/macr_intro.jpg" alt=""></a>   
                     <h3>Giới thiệu</h3>
                     <p>Introduce</p>
+                </div>
+                <div class="Portfolio-box about-macr">
+                    <a href="/macr#portfolio"><img src="img/macr_services.jpg" alt=""></a>   
+                    <h3>Dịch vụ</h3>
+                    <p>Service</p>
                 </div>
                 <div class=" Portfolio-box about-macr">
                     <a href="#"><img src="img/macr_board.jpg" alt=""></a>   
@@ -264,12 +269,7 @@
                     <p>Board</p>
                 </div>
                 <div class=" Portfolio-box about-macr">
-                    <a href="#"><img src="img/macr_services.jpg" alt=""></a>   
-                    <h3>Dịch vụ</h3>
-                    <p>Service</p>
-                </div>
-                <div class=" Portfolio-box about-macr">
-                    <a href="#"><img src="img/macr_jurisdiction.jpg" alt=""></a>   
+                    <a href="/macr#law_frame"><img src="img/macr_jurisdiction.jpg" alt=""></a>   
                     <h3>Khung pháp lý</h3>
                     <p>Juridical</p>
                 </div>
@@ -286,7 +286,7 @@
 
 
                 <div class=" Portfolio-box m-and-a">
-                    <a href="#"><img src="img/Portfolio-pic1.jpg" alt=""></a>   
+                    <a href="/macr#service_a_1"><img src="img/Portfolio-pic1.jpg" alt=""></a>   
                     <h3>Merger</h3>
                     <p>Sáp nhập</p>
                 </div>
@@ -296,28 +296,28 @@
                     <p>Mua lại</p>
                 </div>
                 <div class=" Portfolio-box m-and-a">
-                    <a href="#"><img src="img/macr_M_A_Advisory.jpg" alt=""></a>   
+                    <a href="/macr#service_a_3"><img src="img/macr_M_A_Advisory.jpg" alt=""></a>   
                     <h3>M&A</h3>
                     <p>Tư vấn M&A</p>
                 </div>
 
                 <div class="Portfolio-box appraisal">
-                    <a href="#"><img src="img/Portfolio-pic2.jpg" alt=""></a>   
+                    <a href="/macr#service_a_2"><img src="img/Portfolio-pic2.jpg" alt=""></a>   
                     <h3>Định giá</h3>
                     <p>Appraisal</p>
                 </div>
                 <div class="Portfolio-box appraisal">
-                    <a href="#"><img src="img/Portfolio-pic2.jpg" alt=""></a>   
+                    <a href="/macr#service_a_2"><img src="img/Portfolio-pic2.jpg" alt=""></a>   
                     <h3>Động sản</h3>
                     <p>Personalty</p>
                 </div>
                 <div class="Portfolio-box appraisal">
-                    <a href="#"><img src="img/macr_RealEstate.jpg" alt=""></a>   
+                    <a href="/macr#service_a_2"><img src="img/macr_RealEstate.jpg" alt=""></a>   
                     <h3>Bất động sản</h3>
                     <p>Real estate</p>
                 </div>
                 <div class="Portfolio-box appraisal">
-                    <a href="#"><img src="img/macr_Brand.jpg" alt=""></a>   
+                    <a href="/macr#service_a_2"><img src="img/macr_Brand.jpg" alt=""></a>   
                     <h3>Thương hiệu</h3>
                     <p>Brand valuation</p>
                 </div>
@@ -332,7 +332,7 @@
                     <p>Others</p>
                 </div>
                 <div class="Portfolio-box consult">
-                    <a href="#"><img src="img/macr_ProjectEstimation.jpg" alt=""></a>   
+                    <a href="/macr#service_a_3"><img src="img/macr_ProjectEstimation.jpg" alt=""></a>   
                     <h3>Tư vấn Dự toán</h3>
                     <p>Estimation</p>
                 </div>
@@ -342,23 +342,23 @@
                     <p>Project Evaluation</p>
                 </div>
                 <div class="Portfolio-box consult">
-                    <a href="#"><img src="img/macr_Startup.jpg" alt=""></a>   
+                    <a href="/macr#service_a_3"><img src="img/macr_Startup.jpg" alt=""></a>   
                     <h3>Tư vấn Startup</h3>
                     <p>Startup</p>
                 </div>
 
                 <div class="Portfolio-box library-macr">
-                    <a href="#"><img src="img/macr_LawandEbooks.jpg" alt=""></a>   
+                    <a href="/macr#service_a_5"><img src="img/macr_LawandEbooks.jpg" alt=""></a>   
                     <h3>Luật và sách</h3>
                     <p>Law and Ebook</p>
                 </div>
                 <div class="Portfolio-box library-macr">
-                    <a href="#"><img src="img/macr_Data.jpg" alt=""></a>   
+                    <a href="/macr#service_a_5"><img src="img/macr_Data.jpg" alt=""></a>   
                     <h3>Dữ liệu</h3>
                     <p>Data</p>
                 </div>
                 <div class="Portfolio-box library-macr">
-                    <a href="#"><img src="img/macr_PhotoGallery.jpg" alt=""></a>   
+                    <a href="/macr#service_a_5"><img src="img/macr_PhotoGallery.jpg" alt=""></a>   
                     <h3>Hình ảnh</h3>
                     <p>Picture</p>
                 </div>
@@ -384,14 +384,14 @@
                     <p>Structure</p>
                 </div>
                 <div class=" Portfolio-box company-map">
-                    <a href="#"><img src="img/macr_Sitemap.jpg" alt=""></a>   
+                    <a href="/macr#contact"><img src="img/macr_Sitemap.jpg" alt=""></a>   
                     <h3>Bản đồ MACR</h3>
                     <p>Map's MACR</p>
                 </div>
     </div>
 </section><!--main-section-end-->
 
-<section class="main-section paddind" id="id-dautu"><!--main-section-start-->
+<section class="main-section paddind" id="id-dautu" style="background-color: #eeeeee;"><!--main-section-start-->
     <div class="container">
         <h2>DANH MỤC ĐẦU TƯ</h2>
         <h6>Tất cả tài sản từ danh mục đầu tư này bao gồm cả con người của MACRGROUP sẽ có 1 sứ mệnh duy nhất trong 20 năm tới: Xây dựng thành Trường Đại học Việt Nam Brothers - Vietnam Brothers University. </h6>
@@ -697,7 +697,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
-        <span class="copyright">Bản quyền thuộc về CTCP MACRGROUP BROTHERS - Địa chỉ: 16 đường số 4, CX Bình Thới, P.8, Q.11, Tp.HCM |Giấy phép ĐKKD số:0314035148|ĐT: 08 2262 2828  Made by <a href="#">Thành Trần</a></span>
+        <span class="copyright">Bản quyền thuộc về CTCP MACRGROUP BROTHERS - Địa chỉ: 16 đường số 4, CX Bình Thới, P.8, Q.11, Tp.HCM |Giấy phép ĐKKD số:0314035148|Made by <a href="#">Thành Trần</a></span>
     </div>
     <!-- 
         All links in the footer should remain intact. 
