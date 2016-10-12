@@ -2,7 +2,7 @@
 
 require_once('BaseDAO.php');
 
-class NewsService
+class UserService
 {
 	private $tableName = "macr_user";
 	private $pageSize = 20;
