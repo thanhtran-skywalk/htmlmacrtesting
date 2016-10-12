@@ -15,10 +15,8 @@ class LibService
 
 	public function getLawDocsList($page){
 		$startIndex = $page * $this->pageSize;
-		$endIndex = ($page * $this->pageSize) + $this->pageSize;
-
-		$this->db->set_limit($startIndex, $endIndex);
-
+		$this->db->set_limit($startIndex, $this->pageSize);
+		
 		return $this->db->get_all($this->tableName);
 	}
 

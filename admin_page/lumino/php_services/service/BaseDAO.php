@@ -14,6 +14,7 @@ class BaseDAO extends PDO
 {
 	public $sql = '';
 	public $tail = '';
+	public $tail_order = '';
 	private $charset = 'UTF8';
 	private $options = array('dbtype' => 'mysql', 'dbname' => 'macc2593_macrgroup', 'host' => 'localhost', 'port' => 8889, 'username' => 'root', 'password' => 'root', 'charset' => 'utf8');
 	/**
@@ -172,6 +173,7 @@ class BaseDAO extends PDO
 		$this->sql = 'select ' . $fields . ' from ' . $table . $where;
 		try
 		{
+			$this->sql .= $this->tail_order;
 			$this->sql .= $this->tail;
 			$rs = parent::query($this->sql);
 		}
@@ -285,7 +287,7 @@ class BaseDAO extends PDO
 	{
 		try
 		{
-			$this->sql = $sql . $this->tail;
+			$this->sql = $sql . $this->tail_order . $this->tail;
 			$efnum = parent::exec($this->sql);
 		}
 		catch(PDOException $e)
@@ -304,6 +306,11 @@ class BaseDAO extends PDO
 	public function set_limit($start = 0, $length = 20)
 	{
 		$this->tail = ' limit ' . $start . ', ' . $length;
+	}
+
+	public function set_orderby($key, $order = 'DESC')
+	{
+		$this->tail_order = ' order by ' . $key . ' ' . $order;
 	}
 }
 ?>

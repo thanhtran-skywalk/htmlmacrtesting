@@ -15,9 +15,9 @@ class NewsService
 
 	public function getListUser($page){
 		$startIndex = $page * $this->pageSize;
-		$endIndex = ($page * $this->pageSize) + $this->pageSize;
+		$this->db->set_limit($startIndex, $this->pageSize);
 
-		$this->db->set_limit($startIndex, $endIndex);
+		//$this->db->set_orderby('macr_user_id','ASC');
 
 		return $this->db->get_all($this->tableName);
 	}
