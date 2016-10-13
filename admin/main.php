@@ -72,7 +72,7 @@
 		  <div class="modal fade" id="new-user-dialog" role="dialog">
 		    <div class="modal-dialog my-dialog">
 		      <div class="modal-content">
-		      	<form role="form" action='php_controller/userinsertupdate_controller.php' method='post' enctype="multipart/form-data">
+		      	<form role="form" action='/php_controller/userinsertupdate_controller.php' method='post' enctype="multipart/form-data">
 			        <div class="modal-header">
 			          <button type="button" class="close" data-dismiss="modal">&times;</button>
 			          <h2 class="modal-title">Nhân Sự</h2>

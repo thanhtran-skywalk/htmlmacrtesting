@@ -960,7 +960,7 @@ h1.page-header {
 }
 
 .btn.btn-primary.control-button-edit, .btn.btn-primary.control-button-delete{
-	margin: 0 5px;
+	margin: 5px;
 }
 .shortent-text{
 	height: 120px;

@@ -4,7 +4,7 @@ $(function() {
 
   function getList(page){
   	$.ajax({
-      url: '/admin/php_controller/userlist_controller.php',
+      url: '/php_controller/userlist_controller.php',
       type: 'get',
       data: {'page': page},
       success: function(users, status) {
@@ -27,7 +27,7 @@ $(function() {
             }
 
             var editHtml = '<button class="btn btn-primary control-button-edit" userid="'+ user.macr_user_id +'" data-target="#new-user-dialog" data-toggle="modal">Sửa</button>';
-            var deleteHtml = '<a class="btn btn-primary control-button-delete" href="/admin/php_controller/userdelete_controller.php?userid=' + user.macr_user_id + '" onclick="return confirm(\'Bạn có muốn xoá người này?\');">Xoá</a>';
+            var deleteHtml = '<a class="btn btn-primary control-button-delete" href="/php_controller/userdelete_controller.php?userid=' + user.macr_user_id + '" onclick="return confirm(\'Bạn có muốn xoá người này?\');">Xoá</a>';
 
         
 
@@ -83,7 +83,7 @@ $(function() {
     var id = $(this).attr('userid');
 
     $.ajax({
-        url: '/admin/php_controller/userfindone_controller.php',
+        url: '/php_controller/userfindone_controller.php',
         type: 'get',
         data: {'userid': id},
         success: function(user, status) {

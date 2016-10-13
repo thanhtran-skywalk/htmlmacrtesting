@@ -55,7 +55,7 @@
          </a>
       </li>
       <li id="nav-law">
-         <a href="forms.html">
+         <a href="law.php">
             <svg class="glyph stroked pencil">
                <use xlink:href="#stroked-pencil"></use>
             </svg>
@@ -63,7 +63,7 @@
          </a>
       </li>
       <li id="nav-macrgroup">
-         <a href="tables.html">
+         <a href="macrgroup.php">
             <svg class="glyph stroked star">
                <use xlink:href="#stroked-star"></use>
             </svg>

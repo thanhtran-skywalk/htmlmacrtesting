@@ -5,7 +5,7 @@ require_once('BaseDAO.php');
 class BookService
 {
 	private $tableName = "macr_books";
-	private $pageSize = 20;
+	private $pageSize = 10;
 	private $db;
 
 	public function __construct()
@@ -15,6 +15,7 @@ class BookService
 
 	public function getBookList($page){
 		$startIndex = $page * $this->pageSize;
+		$this->db->set_orderby('macr_book_publish_date','DESC');
 		$this->db->set_limit($startIndex, $this->pageSize);
 
 		return $this->db->get_all($this->tableName);

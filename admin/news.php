@@ -55,7 +55,7 @@
 						    <tr>
 						    	<th>Hình ảnh</th>
 						        <th>Tiêu đề</th>
-						        <th style="width:50%;max-width: 50%;">Tóm tắt</th>
+						        <th style="width:40%;max-width: 40%;">Tóm tắt</th>
 						        <th>Ngày đăng</th>
 						        <th>Thao tác</th>
 						    </tr>
@@ -73,7 +73,7 @@
 		  <div class="modal fade" id="news-dialog" role="dialog">
 		    <div class="modal-dialog my-dialog">
 		      <div class="modal-content">
-		      	<form role="form" action='php_controller/newsinsertupdate_controller.php' method='post' enctype="multipart/form-data">
+		      	<form role="form" action='/php_controller/newsinsertupdate_controller.php' method='post' enctype="multipart/form-data">
 			        <div class="modal-header">
 			          <button type="button" class="close" data-dismiss="modal">&times;</button>
 			          <h2 class="modal-title">Tin tức</h2>

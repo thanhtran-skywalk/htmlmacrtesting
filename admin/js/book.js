@@ -4,7 +4,7 @@ $(function() {
 
   function getList(page){
     $.ajax({
-      url: '/admin/php_controller/booklist_controller.php',
+      url: '/php_controller/booklist_controller.php',
       type: 'get',
       data: {'page': page},
       success: function(list, status) {
@@ -17,7 +17,7 @@ $(function() {
             }
 
             var editHtml = '<button class="btn btn-primary control-button-edit" itemid="'+ item.macr_book_id +'" data-target="#new-dialog" data-toggle="modal">Sửa</button>';
-            var deleteHtml = '<a class="btn btn-primary control-button-delete" href="/admin/php_controller/bookdelete_controller.php?itemid=' + item.macr_book_id + '" onclick="return confirm(\'Bạn có muốn xoá sách này?\');">Xoá</a>';
+            var deleteHtml = '<a class="btn btn-primary control-button-delete" href="/php_controller/bookdelete_controller.php?itemid=' + item.macr_book_id + '" onclick="return confirm(\'Bạn có muốn xoá sách này?\');">Xoá</a>';
 
         
 
@@ -64,7 +64,7 @@ $(function() {
     var id = $(this).attr('itemid');
 
     $.ajax({
-        url: '/admin/php_controller/bookfindone_controller.php',
+        url: '/php_controller/bookfindone_controller.php',
         type: 'get',
         data: {'itemid': id},
         success: function(item, status) {

@@ -4,7 +4,7 @@ $(function() {
 
   function getList(page){
   	$.ajax({
-      url: '/admin/php_controller/newslist_controller.php',
+      url: '/php_controller/newslist_controller.php',
       type: 'get',
       data: {'page': page},
       success: function(newsList, status) {
@@ -17,7 +17,7 @@ $(function() {
             }
 
             var editHtml = '<button class="btn btn-primary control-button-edit" newsid="'+ news.macr_news_id +'" data-target="#news-dialog" data-toggle="modal">Sửa</button>';
-            var deleteHtml = '<a class="btn btn-primary control-button-delete" href="/admin/php_controller/newsdelete_controller.php?newsid=' + news.macr_news_id + '" onclick="return confirm(\'Bạn có muốn xoá tin tức này?\');">Xoá</a>';
+            var deleteHtml = '<a class="btn btn-primary control-button-delete" href="/php_controller/newsdelete_controller.php?newsid=' + news.macr_news_id + '" onclick="return confirm(\'Bạn có muốn xoá tin tức này?\');">Xoá</a>';
 
         
 
@@ -63,7 +63,7 @@ $(function() {
     var id = $(this).attr('newsid');
 
     $.ajax({
-        url: '/admin/php_controller/newsfindone_controller.php',
+        url: '/php_controller/newsfindone_controller.php',
         type: 'get',
         data: {'newsid': id},
         success: function(news, status) {

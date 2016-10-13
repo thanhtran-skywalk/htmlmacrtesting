@@ -35,29 +35,28 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Quản Lý Sách</li>
+				<li class="active">General setting</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Sách</h1>
+				<h1 class="page-header">General setting</h1>
 			</div>
 		</div><!--/.row-->
 				
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<button type="button" class="btn btn-info btn-lg addnew" data-target="#new-dialog" data-toggle="modal">Thêm mới</button>
+				<button type="button" class="btn btn-info btn-lg addnew" data-target="#news-dialog" data-toggle="modal">Thêm mới</button>
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<table class="table table-hover my-custom-table" id="table_user">
 						    <tr>
 						    	<th>Hình ảnh</th>
-						        <th>Tên sách</th>
-						        <th style="width:40%;max-width: 40%;">Mô tả</th>
-						        <th>Tác giả</th>
-						        <th>Nhà xuất bản</th>
+						        <th>Tiêu đề</th>
+						        <th style="width:40%;max-width: 40%;">Tóm tắt</th>
+						        <th>Ngày đăng</th>
 						        <th>Thao tác</th>
 						    </tr>
 						</table>
@@ -71,30 +70,22 @@
 		</div>
 		
 
-		  <div class="modal fade" id="new-dialog" role="dialog">
+		  <div class="modal fade" id="news-dialog" role="dialog">
 		    <div class="modal-dialog my-dialog">
 		      <div class="modal-content">
-		      	<form role="form" action='/php_controller/bookinsertupdate_controller.php' method='post' enctype="multipart/form-data">
+		      	<form role="form" action='/php_controller/newsinsertupdate_controller.php' method='post' enctype="multipart/form-data">
 			        <div class="modal-header">
 			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			          <h2 class="modal-title">Sách</h2>
+			          <h2 class="modal-title">Tin tức</h2>
 			        </div>
 			        <div class="modal-body">
 			          	<div class="form-group">
-							<label>Tên Sách</label>
-							<input name="macr_book_name" id="macr_book_name" class="form-control"  />
+							<label>Tiêu đề</label>
+							<input name="title" id="title" class="form-control"  />
 						</div>
 						<div class="form-group">
-							<label>Tác giả</label>
-							<input name="macr_book_author" id="macr_book_author" class="form-control"  />
-						</div>
-						<div class="form-group">
-							<label>Nhà xuất bản</label>
-							<input name="publisher" id="publisher" class="form-control"  />
-						</div>
-						<div class="form-group">
-							<label>Mô tả</label>
-							<textarea name="macr_book_description" id="macr_book_description" class="form-control" rows="15"></textarea> 
+							<label>Nội dung</label>
+							<textarea name="content" id="content" class="form-control" rows="20"></textarea> 
 						</div>
 						
 														
@@ -102,7 +93,7 @@
 							<label>Hình ảnh</label>
 							<input type="file" name="imagefile" />
 						</div>
-						<input type="hidden" name="itemid" id="itemid" />
+						<input type="hidden" name="newsid" id="newsid" />
 						<input type="hidden" name="oldimage" id="oldimage" />
 						
 
@@ -127,7 +118,7 @@
 
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/book.js"></script>
+	
 	
 </body>
 

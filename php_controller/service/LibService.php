@@ -5,7 +5,7 @@ require_once('BaseDAO.php');
 class LibService
 {
 	private $tableName = "macr_law_document";
-	private $pageSize = 20;
+	private $pageSize = 10;
 	private $db;
 
 	public function __construct()
@@ -15,6 +15,7 @@ class LibService
 
 	public function getLawDocsList($page){
 		$startIndex = $page * $this->pageSize;
+		$this->db->set_orderby('macr_law_date','DESC');
 		$this->db->set_limit($startIndex, $this->pageSize);
 		
 		return $this->db->get_all($this->tableName);
