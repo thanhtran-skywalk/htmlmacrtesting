@@ -1,5 +1,8 @@
+
+
 <?php
 	session_start();
+
 	if(isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'])
 	{
 ?>
@@ -32,30 +35,29 @@
 		<div class="row">
 			<ol class="breadcrumb">
 				<li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-				<li class="active">Quản Lý Nhân Sự</li>
+				<li class="active">Quản Lý Sách</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Nhân Sự</h1>
+				<h1 class="page-header">Sách</h1>
 			</div>
 		</div><!--/.row-->
 				
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<button type="button" class="btn btn-info btn-lg addnew" data-target="#new-user-dialog" data-toggle="modal">Thêm mới</button>
+				<button type="button" class="btn btn-info btn-lg addnew" data-target="#new-dialog" data-toggle="modal">Thêm mới</button>
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<table class="table table-hover my-custom-table" id="table_user">
 						    <tr>
 						    	<th>Hình ảnh</th>
-						        <th>Tên ngắn</th>
-						        <th>Tên đầy đủ</th>
-						        <th>Email</th>
-						        <th>Macrgroup</th>
-						        <th>Macr</th>
+						        <th>Tên sách</th>
+						        <th style="width:50%;max-width: 50%;">Mô tả</th>
+						        <th>Tác giả</th>
+						        <th>Nhà xuất bản</th>
 						        <th>Thao tác</th>
 						    </tr>
 						</table>
@@ -65,63 +67,34 @@
 		</div><!--/.row-->	
 
 		<div class="row" style="text-align: center;">
-			<button type="button" class="btn btn-info btn-lg" id="loadmoreuser">Tải Thêm</button>
+			<button type="button" class="btn btn-info btn-lg" id="loadmore">Tải Thêm</button>
 		</div>
 		
 
-		  <div class="modal fade" id="new-user-dialog" role="dialog">
+		  <div class="modal fade" id="new-dialog" role="dialog">
 		    <div class="modal-dialog my-dialog">
 		      <div class="modal-content">
-		      	<form role="form" action='php_controller/userinsertupdate_controller.php' method='post' enctype="multipart/form-data">
+		      	<form role="form" action='php_controller/bookinsertupdate_controller.php' method='post' enctype="multipart/form-data">
 			        <div class="modal-header">
 			          <button type="button" class="close" data-dismiss="modal">&times;</button>
-			          <h2 class="modal-title">Nhân Sự</h2>
+			          <h2 class="modal-title">Sách</h2>
 			        </div>
 			        <div class="modal-body">
 			          	<div class="form-group">
-							<label>Tên Ngắn</label>
-							<input name="displayName" id="displayName" class="form-control"  />
+							<label>Tên Sách</label>
+							<input name="macr_book_name" id="macr_book_name" class="form-control"  />
 						</div>
 						<div class="form-group">
-							<label>Tên đầy đủ</label>
-							<input name="fullName" id="fullName" class="form-control"  />
+							<label>Tác giả</label>
+							<input name="macr_book_author" id="macr_book_author" class="form-control"  />
 						</div>
 						<div class="form-group">
-							<label>Email</label>
-							<input name="email" id="email" class="form-control" type="email" />
-						</div>
-														
-						<div class="form-group">
-							<label>Mật khẩu</label>
-							<input name="password" id="password" type="password" class="form-control">
-						</div>
-						
-						<div class="form-group">
-							<label>Quyền</label>
-							<div class="form-group checkbox">
-							  <label><input name="role" id="role" type="checkbox" value="yes">Có quyền admin</label>
-							</div>
+							<label>Nhà xuất bản</label>
+							<input name="publisher" id="publisher" class="form-control"  />
 						</div>
 						<div class="form-group">
-							<label>Chức vụ</label>
-							<input name="position" id="position" class="form-control" />
-						</div>
-						<div class="form-group">
-							<label>Học vấn</label>
-							<input name="education" id="education" class="form-control"  />
-						</div>
-						<div class="form-group">
-							<label>Chuyên ngành</label>
-							<textarea name="major" id="major" class="form-control" rows="3"></textarea> 
-						</div>
-						<div class="form-group">
-							<label>Hiển thị trên web</label>
-							<div class="form-group checkbox">
-							  <label><input name="macrgroup" id="macrgroup" type="checkbox" value="yes">Hiển Thị Trên Macrgroup</label>
-							  <input name="macrgroup_order" id="macrgroup_order" placeholder="Thứ tự hiển thị" style="margin-right: 30px;" />
-							  <label><input name="macr" id="macr" type="checkbox" value="yes">Hiển Thị Trên Macr</label>
-							  <input name="macr_order" id="macr_order" placeholder="Thứ tự hiển thị"  />
-							</div>
+							<label>Mô tả</label>
+							<textarea name="macr_book_description" id="macr_book_description" class="form-control" rows="15"></textarea> 
 						</div>
 						
 														
@@ -129,7 +102,7 @@
 							<label>Hình ảnh</label>
 							<input type="file" name="imagefile" />
 						</div>
-						<input type="hidden" name="userid" id="userid" />
+						<input type="hidden" name="itemid" id="itemid" />
 						<input type="hidden" name="oldimage" id="oldimage" />
 						
 
@@ -154,7 +127,7 @@
 
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/user.js"></script>
+	<script src="js/book.js"></script>
 	
 </body>
 

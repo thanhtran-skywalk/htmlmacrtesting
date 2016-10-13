@@ -13,7 +13,7 @@ class BookService
 		$this->db = new BaseDAO();
 	}
 
-	public function getNewsList($page){
+	public function getBookList($page){
 		$startIndex = $page * $this->pageSize;
 		$this->db->set_limit($startIndex, $this->pageSize);
 
@@ -27,8 +27,7 @@ class BookService
 	}
 
 	public function insertBook($macr_book_name, $macr_book_author, $macr_book_description, $macr_book_img_path, $publisher){
-		$macr_book_publish_date = date('d-m-Y H:i:s');
-		$data = array('macr_book_name' => $macr_book_name, 'macr_book_author' => $macr_book_author, 'macr_book_publish_date' => $macr_book_publish_date, 'macr_book_description' => $macr_book_description, 'macr_book_img_path' => $macr_book_img_path, 'publisher' => $publisher);
+		$data = array('macr_book_name' => $macr_book_name, 'macr_book_author' => $macr_book_author, 'macr_book_description' => $macr_book_description, 'macr_book_img_path' => $macr_book_img_path, 'publisher' => $publisher);
 		return $this->db->insert($this->tableName, $data);
 	}
 

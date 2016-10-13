@@ -941,9 +941,31 @@ h1.page-header {
 }
 
 
+.my-custom-table th{
+	padding: 15px !important;
+}
 
+.btn.btn-info.btn-lg.addnew{
+	float: right;
+    margin: 15px;
+}
 
+.modal-dialog.my-dialog{
+	width: 800px;
+}
 
+.checked-img{
+	height: 70px;
+    margin-left: 12px;
+}
+
+.btn.btn-primary.control-button-edit, .btn.btn-primary.control-button-delete{
+	margin: 0 5px;
+}
+.shortent-text{
+	height: 120px;
+    overflow: hidden;
+}
 
 
 

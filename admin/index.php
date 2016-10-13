@@ -18,7 +18,7 @@
 			<div class="login-panel panel panel-default">
 				<div class="panel-heading">Log in</div>
 				<div class="panel-body">
-					<form role="form" action='php_controller/login_controller.php' method='post'>
+					<form role="form" action='php_controller/userlogin_controller.php' method='post'>
 						<fieldset>
 							<div class="form-group">
 								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">

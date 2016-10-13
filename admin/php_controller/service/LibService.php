@@ -27,8 +27,7 @@ class LibService
 	}
 
 	public function insertLawDoc($macr_law_id, $macr_law_titile, $macr_law_content, $macr_img_path){
-		$macr_law_date = date('d-m-Y H:i:s');
-		$data = array('macr_law_id' => $macr_law_id, 'macr_law_titile' => $macr_law_titile, 'macr_law_content' => $macr_law_content, 'macr_law_date' => $macr_law_date, 'macr_img_path' => $macr_img_path);
+		$data = array('macr_law_id' => $macr_law_id, 'macr_law_titile' => $macr_law_titile, 'macr_law_content' => $macr_law_content, 'macr_img_path' => $macr_img_path);
 		return $this->db->insert($this->tableName, $data);
 	}
 
