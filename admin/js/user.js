@@ -61,6 +61,7 @@ $(function() {
     $('#email').val("");
     $('#password').val("");
     $('#position').val("");
+    $('#shortposition').val("");
     $('#education').val("");
     $('#major').val("");
     $('#role').prop('checked', false);
@@ -92,6 +93,7 @@ $(function() {
             $('#fullName').val(rs.macr_full_name);
             $('#email').val(rs.macr_email);
             $('#position').val(rs.macr_position);
+            $('#shortposition').val(rs.macr_short_position);
             $('#education').val(rs.macr_education);
             $('#major').val(rs.macr_major);
             $('#userid').val(rs.macr_user_id);

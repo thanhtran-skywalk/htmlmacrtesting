@@ -12,6 +12,8 @@ session_start();
 	     header('Location: /admin/index.php?error=true');
 	}else{
 		$_SESSION['loggedIn'] = true;
+		$_SESSION['currentuserid'] = $rs['macr_user_id'];
+		$_SESSION['currentp'] = $rs['macr_password'];
 		header('Location: /admin/main.php');
 	}
  }else{

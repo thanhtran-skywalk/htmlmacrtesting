@@ -17,9 +17,26 @@ class UserService
 		$startIndex = $page * $this->pageSize;
 		$this->db->set_limit($startIndex, $this->pageSize);
 
-		//$this->db->set_orderby('macr_user_id','ASC');
+		$this->db->set_orderby('macr_user_id','DESC');
 
 		return $this->db->get_all($this->tableName);
+	}
+
+	public function getDisplayUsersMacrgroup(){
+		$condition = array('macrgroup' => 1);
+		$column = array('macr_user_id','macr_email', 'macr_full_name', 'macr_position', 'macr_education', 'macr_major', 'macr_img_path','macr_user_display_name','macr_short_position');
+		$this->db->set_limit(0, 10);
+		$this->db->set_orderby('macrgroup_order	','ASC');
+		return $this->db->get_rows($this->tableName, $condition, false, $column);
+
+	}
+
+	public function getDisplayUsersMacr(){
+		$condition = array('macr' => 1);
+		$column = array('macr_user_id','macr_email', 'macr_full_name', 'macr_position', 'macr_education', 'macr_major', 'macr_img_path','macr_user_display_name','macr_short_position');
+		$this->db->set_limit(0, 8);
+		$this->db->set_orderby('macr_order	','ASC');
+		return $this->db->get_rows($this->tableName, $condition, false, $column);
 	}
 
 	public function findByUserId($userid){
@@ -34,13 +51,13 @@ class UserService
 		return $rs;
 	}
 
-	public function insertUser($macr_full_name, $macr_email, $macr_password, $macr_position, $macr_education, $macr_major, $macr_img_path, $macr_user_role, $macr_user_display_name, $macrgroup, $macr, $macrgroup_order, $macr_order){
-		$data = array('macr_full_name' => $macr_full_name, 'macr_email' => $macr_email, 'macr_password' => md5($macr_password), 'macr_position' => $macr_position, 'macr_education' => $macr_education, 'macr_major' => $macr_major, 'macr_img_path' => $macr_img_path, 'macr_user_display_name' => $macr_user_display_name, 'macr_user_role' =>  $macr_user_role, 'macrgroup' => $macrgroup, 'macr' => $macr, 'macrgroup_order' => $macrgroup_order, 'macr_order' => $macr_order);
+	public function insertUser($macr_full_name, $macr_email, $macr_password, $macr_position, $macr_short_position, $macr_education, $macr_major, $macr_img_path, $macr_user_role, $macr_user_display_name, $macrgroup, $macr, $macrgroup_order, $macr_order){
+		$data = array('macr_full_name' => $macr_full_name, 'macr_email' => $macr_email, 'macr_password' => md5($macr_password), 'macr_position' => $macr_position, 'macr_short_position' => $macr_short_position, 'macr_education' => $macr_education, 'macr_major' => $macr_major, 'macr_img_path' => $macr_img_path, 'macr_user_display_name' => $macr_user_display_name, 'macr_user_role' =>  $macr_user_role, 'macrgroup' => $macrgroup, 'macr' => $macr, 'macrgroup_order' => $macrgroup_order, 'macr_order' => $macr_order);
 		return $this->db->insert($this->tableName, $data);
 	}
 
-	public function updateUser($macr_user_id, $macr_full_name, $macr_email, $macr_position, $macr_education, $macr_major, $macr_img_path, $macr_user_role, $macr_user_display_name, $macrgroup, $macr, $macrgroup_order, $macr_order){
-		$data = array('macr_full_name' => $macr_full_name, 'macr_email' => $macr_email, 'macr_position' => $macr_position, 'macr_education' => $macr_education, 'macr_major' => $macr_major, 'macr_img_path' => $macr_img_path, 'macr_user_display_name' => $macr_user_display_name, 'macr_user_role' =>  $macr_user_role, 'macrgroup' => $macrgroup, 'macr' => $macr, 'macrgroup_order' => $macrgroup_order, 'macr_order' => $macr_order);
+	public function updateUser($macr_user_id, $macr_full_name, $macr_email, $macr_position, $macr_short_position, $macr_education, $macr_major, $macr_img_path, $macr_user_role, $macr_user_display_name, $macrgroup, $macr, $macrgroup_order, $macr_order){
+		$data = array('macr_full_name' => $macr_full_name, 'macr_email' => $macr_email, 'macr_position' => $macr_position, 'macr_short_position' => $macr_short_position, 'macr_education' => $macr_education, 'macr_major' => $macr_major, 'macr_img_path' => $macr_img_path, 'macr_user_display_name' => $macr_user_display_name, 'macr_user_role' =>  $macr_user_role, 'macrgroup' => $macrgroup, 'macr' => $macr, 'macrgroup_order' => $macrgroup_order, 'macr_order' => $macr_order);
 		$condition = array('macr_user_id' => $macr_user_id);
 		return $this->db->update($this->tableName, $data, $condition);
 	}
@@ -48,6 +65,12 @@ class UserService
 	public function deleteUser($macr_user_id){
 		$condition = array('macr_user_id' => $macr_user_id);
 		return $this->db->delete($this->tableName, $condition);
+	}
+
+	public function updatePassword($macr_user_id, $macr_password){
+		$data = array('macr_password' => md5($macr_password));
+		$condition = array('macr_user_id' => $macr_user_id);
+		return $this->db->update($this->tableName, $data, $condition);
 	}
 }
 

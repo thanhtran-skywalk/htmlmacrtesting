@@ -13,10 +13,10 @@ class NewsService
 		$this->db = new BaseDAO();
 	}
 
-	public function getNewsList($page){
+	public function getNewsList($page, $limit=10){
 		$startIndex = $page * $this->pageSize;
 		$this->db->set_orderby('macr_news_date','DESC');
-		$this->db->set_limit($startIndex, $this->pageSize);
+		$this->db->set_limit($startIndex, $limit);
 
 		return $this->db->get_all($this->tableName);
 	}

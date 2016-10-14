@@ -36,48 +36,7 @@
 
 <body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Macr</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#introduce" id="nav-introduce" data-toggle="modal">Giới Thiệu</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Dịch Vụ</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#news">Tin Tức</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#law_docs">Thư Viện</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#law_frame">Khung Pháp Lý</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Liên Hệ</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
+    <?php include 'include/navigator.php';?>
     <!-- Header -->
     <header style="height: 670px;">
         <div class="container">
@@ -194,70 +153,16 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Tin Tức</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Tin tức và hoạt động của Macr</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-news img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted news">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-news img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted news">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam</p>
-                                </div>
-                            </div>
-                    </div>
-                     <div class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-news img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted news">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam</p>
-                                </div>
-                            </div>
-                    </div>
-                     <div class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-news img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted news">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam</p>
-                                </div>
-                            </div>
-                    </div>
+                <div class="col-lg-12" id="news-row">
+                    
+                    
                 </div>
             </div>
-            <a href="#" class="a-button">Tin tức Khác</a>
+            <a href="news.php" class="a-button" id="other-news">Tin tức Khác</a>
         </div>
     </section>
 
@@ -431,37 +336,37 @@
 
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="service1" tabindex="-1" role="dialog" aria-hidden="true">
-       <?php include 'service1.php';?>
+       <?php include 'include/service1.php';?>
     </div>
 
     <!-- Portfolio Modal 2 -->
     <div class="portfolio-modal modal fade" id="service2" tabindex="-1" role="dialog" aria-hidden="true">
-       <?php include 'service2.php';?>
+       <?php include 'include/service2.php';?>
     </div>
 
     <!-- Portfolio Modal 3 -->
     <div class="portfolio-modal modal fade" id="service3" tabindex="-1" role="dialog" aria-hidden="true">
-         <?php include 'service3.php';?>
+         <?php include 'include/service3.php';?>
     </div>
 
     <!-- Portfolio Modal 4 -->
     <div class="portfolio-modal modal fade" id="service4" tabindex="-1" role="dialog" aria-hidden="true">
-        <?php include 'service4.php';?>
+        <?php include 'include/service4.php';?>
     </div>
 
     <!-- Portfolio Modal 5 -->
     <div class="portfolio-modal modal fade" id="service5" tabindex="-1" role="dialog" aria-hidden="true">
-        <?php include 'service5.php';?>
+        <?php include 'include/service5.php';?>
     </div>
 
     <!-- Portfolio Modal 6 -->
     <div class="portfolio-modal modal fade" id="service6" tabindex="-1" role="dialog" aria-hidden="true">
-       <?php include 'service6.php';?>
+       <?php include 'include/service6.php';?>
     </div>
 
     <!-- Portfolio Modal intro -->
     <div class="portfolio-modal modal fade" id="introduce" tabindex="-1" role="dialog" aria-hidden="true">
-        <?php include 'introduce.php';?>
+        <?php include 'include/introduce.php';?>
     </div>
 
     <!-- jQuery -->
@@ -479,6 +384,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <script src="js/loadteam.js"></script>
 
 </body>
 

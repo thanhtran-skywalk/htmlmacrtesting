@@ -69,7 +69,7 @@ $(function() {
         success: function(news, status) {
             var rs = JSON.parse(news);
             $('#title').val(rs.macr_news_title);
-            $('#content').text(rs.macr_news_contents);
+            $('#content').val(rs.macr_news_contents);
             $('#newsid').val(rs.macr_news_id);
             $('#oldimage').val(rs.macr_img_path);
         },

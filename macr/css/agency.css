@@ -747,6 +747,7 @@ body {
     width: 250px;
     display: inline-block;
     margin: 0px 15px;
+    vertical-align: top;
 }
 .img-news{
   width: 100%;
@@ -838,4 +839,40 @@ body {
 }
 .padding-top-increase{
   padding-top: 12px;
+}
+.timeline-body {
+    height: 90px;
+    overflow: hidden;
+}
+.timeline-heading {
+    height: 65px;
+    overflow: hidden;
+}
+.timeline-heading.news{
+  text-align: left;
+}
+
+.h5-line{
+  line-height: 18px;
+}
+.news-title{
+      color: #fed136;
+}
+.news-preview {
+    height: 150px;
+    overflow: hidden;
+}
+.news-img{
+  text-align: center;
+  padding: 0 20px 30px;
+}
+
+.news-img img{
+  max-width: 945px;
+  max-height: 500px;
+}
+
+.team-img-mem{
+    height: 200px;
+    width: 200px;
 }

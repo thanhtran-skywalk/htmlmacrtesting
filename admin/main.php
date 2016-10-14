@@ -103,7 +103,11 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label>Chức vụ</label>
+							<label>Chức vụ - tóm tắt</label>
+							<input name="shortposition" id="shortposition" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label>Chức vụ - đầy đủ</label>
 							<input name="position" id="position" class="form-control" />
 						</div>
 						<div class="form-group">
@@ -155,6 +159,7 @@
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/user.js"></script>
+	<script src="js/pass.js"></script>
 	
 </body>
 

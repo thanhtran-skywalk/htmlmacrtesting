@@ -34,6 +34,7 @@ if(isset($_POST["submit"])) {
 	    $macr_user_role = 1;
 	}
    $macr_position = $_POST["position"];
+   $macr_short_position = $_POST["shortposition"];
    $macr_education = $_POST["education"];
    $macr_major = $_POST["major"];
    $macr_img_path = $_POST['oldimage'];
@@ -68,9 +69,9 @@ if(isset($_POST["submit"])) {
          unlink('..'. $_POST['oldimage']);
       }
       $macr_user_id = $_POST['userid'];
-      $rs = $userService->updateUser($macr_user_id, $macr_full_name, $macr_email, $macr_position, $macr_education, $macr_major, $macr_img_path, $macr_user_role, $macr_user_display_name, $macrgroup, $macr, $macrgroup_order, $macr_order);
+      $rs = $userService->updateUser($macr_user_id, $macr_full_name, $macr_email, $macr_position, $macr_short_position, $macr_education, $macr_major, $macr_img_path, $macr_user_role, $macr_user_display_name, $macrgroup, $macr, $macrgroup_order, $macr_order);
    }else{
-      $rs = $userService->insertUser($macr_full_name, $macr_email, $macr_password, $macr_position, $macr_education, $macr_major, $macr_img_path, $macr_user_role, $macr_user_display_name, $macrgroup, $macr, $macrgroup_order, $macr_order);
+      $rs = $userService->insertUser($macr_full_name, $macr_email, $macr_password, $macr_position, $macr_short_position, $macr_education, $macr_major, $macr_img_path, $macr_user_role, $macr_user_display_name, $macrgroup, $macr, $macrgroup_order, $macr_order);
    }
    
    header('Location: /admin/main.php');

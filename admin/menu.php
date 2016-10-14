@@ -12,9 +12,8 @@
                <li class="dropdown pull-right">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Admin <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                     <li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Profile</a></li>
-                     <li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Settings</a></li>
-                     <li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
+                     <li><a href="#" data-target="#changepass-dialog" data-toggle="modal" ><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Đổi mật khẩu</a></li>
+                     <li><a href="/php_controller/userlogout_controller.php"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Đăng xuất</a></li>
                   </ul>
                </li>
             </ul>
@@ -71,5 +70,44 @@
          </a>
       </li>
    </ul>
+</div>
+
+  <div class="modal fade" id="changepass-dialog" role="dialog">
+          <div class="modal-dialog my-dialog">
+            <div class="modal-content">
+               <form role="form" id="change-password-form" method="post">
+                 <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   <h2 class="modal-title">Đổi mật khẩu</h2>
+                 </div>
+                 <div class="modal-body">
+                     <div class="form-group">
+                     <label>Mật khẩu cũ</label>
+                     <input name="oldpass" id="oldpass" class="form-control" type="password"  />
+                  </div>
+                  <div class="form-group">
+                     <label>Mật khẩu mới</label>
+                     <input name="newpass" id="newpass" class="form-control" type="password" />
+                  </div>
+                             
+                  <div class="form-group">
+                     <label>Xác nhận mật khẩu mới</label>
+                     <input name="confirmpass" id="confirmpass" class="form-control" type="password" />
+                  </div>
+                  
+
+                  <div class="form-group has-error">
+                     <span id="error-msg-change-pass" style="display:none; color:red;"></span>
+                  </div>
+                 </div>
+                 <div class="modal-footer">
+                   <input type="submit" name="submit" class="btn btn-default" value="Hoàn Thành" />
+                 </div>
+               </form>
+
+
+            </div>
+            
+          </div>
 </div>
 <!--/.sidebar-->
