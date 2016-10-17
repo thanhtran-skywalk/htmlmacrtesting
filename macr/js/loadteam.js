@@ -15,8 +15,13 @@
                   imgPath = item.macr_img_path;
                 }
                 
-                var first = '<div class="team-leader-box macr"><div class="team-leader wow fadeInDown delay-03s" style="height: 200px; width: 200px"> <div class="team-leader-shadow"><a href="#"></a></div><img class="team-img-mem" src="' + imgPath + '" alt=""></div>';
-                var second = '<h3 class="wow fadeInDown delay-03s">'+item.macr_user_display_name +'</h3><span class="wow fadeInDown delay-03s">'+ item.macr_short_position +'</span></div>';
+               var first = '<div class="team-leader-box"><div class="team-leader wow fadeInDown delay-09s"> <div class="team-leader-shadow"><a href="#"></a></div><img src="'+ imgPath +'" alt=""></div>';
+        
+               var second = '<h3 class="wow fadeInDown delay-09s">'+ item.macr_user_display_name +'</h3><span class="wow fadeInDown delay-09s">' + item.macr_short_position + '</span></div>';
+
+
+               // var first = '<div class="team-leader-box macr"><div class="team-leader wow fadeInDown delay-03s" style="height: 200px; width: 200px"> <div class="team-leader-shadow"><a href="#"></a></div><img class="team-img-mem" src="' + imgPath + '" alt=""></div>';
+               // var second = '<h3 class="wow fadeInDown delay-03s">'+item.macr_user_display_name +'</h3><span class="wow fadeInDown delay-03s">'+  +'</span></div>';
                
                 var newsStr = first + second;
 

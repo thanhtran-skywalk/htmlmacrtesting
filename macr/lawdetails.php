@@ -63,11 +63,11 @@
         <div class="container center-element">
             <div class="row">
                 <div class="col-lg-12 text-center" style="margin-bottom: 20px;">
-                    <h2 class="section-heading">Bài Mới Nhất</h2>
+                    <h2 class="section-heading">Văn Bản Mới Nhất</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12" id="news-row">
+                <div class="col-lg-12" id="laws-row">
                    
                 </div>
             </div>
@@ -81,7 +81,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     
-     <script src="js/newsdetails.js"></script>
+     <script src="js/lawdetails.js"></script>
 
 
 

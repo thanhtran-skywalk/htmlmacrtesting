@@ -180,14 +180,27 @@
                 <div class="col-lg-12">
                     <div class="timeline-inverted library">
                             <div class="timeline-image">
-                                <img class="img-lib img-responsive" src="img/about/1.jpg" alt="">
+                                <a href="books.php"><img class="img-lib img-responsive" src="img/about/1.jpg" alt=""></a>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Luật và sách</h4>
+                                    <a href="books.php"><h4>Sách</h4></a>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="timeline-inverted library">
+                            <div class="timeline-image">
+                               <a href="laws.php"><img class="img-lib img-responsive" src="img/about/3.jpg" alt=""></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                   <a href="laws.php"> <h4>Văn bản pháp luật</h4></a>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur</p>
                                 </div>
                             </div>
                     </div>
@@ -204,19 +217,7 @@
                                 </div>
                             </div>
                     </div>
-                     <div class="timeline-inverted library">
-                            <div class="timeline-image">
-                                <img class="img-lib img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Hình ảnh</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur</p>
-                                </div>
-                            </div>
-                    </div>
+                     
                      
                 </div>
             </div>
@@ -275,30 +276,35 @@
         <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Liên Hệ</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
         </div>
         <div class="row">
+            <?php 
+                include '../php_controller/service/ContactService.php';
+                $contactService = new ContactService();
+                $contact = $contactService->findById("1");                                  
+            ?>
             <div class="col-lg-6 col-sm-7 wow fadeInLeft contact-info">
                 <div class="contact-info-box address clearfix">
-                    <h3 class="white-color"><i class="fa-map-marker white-color"></i>Address:</h3>
-                    <span>Số 16, Đường số 4, Cư xá Bình Thới<br>Phường 8, Quận 11, TP.HCM</span>
+                    <h3 class="white-color"><i class="fa-map-marker white-color"></i>Địa chỉ:</h3>
+                    <span><?php echo $contact["adress"]; ?></span>
                 </div>
                 <div class="contact-info-box phone clearfix">
-                    <h3 class="white-color"><i class="fa-phone white-color"></i>Phone:</h3>
-                    <span>(+84)08 2262 2828</span>
+                    <h3 class="white-color"><i class="fa-phone white-color"></i>Điện thoại:</h3>
+                    <span><?php echo $contact["phone"]; ?></span>
                 </div>
                 <div class="contact-info-box email clearfix">
                     <h3 class="white-color"><i class="fa-pencil white-color"></i>email:</h3>
-                    <span>taidh@macrgroup.com</span>
+                    <span><?php echo $contact["email"]; ?></span>
                 </div>
                 <div class="contact-info-box hours clearfix">
-                    <h3 class="white-color"><i class="fa-clock-o white-color"></i>Hours:</h3>
-                    <span><strong>Monday - Friday:</strong> 9am - 17h30pm<br><strong>Saturday - Sunday:</strong> Vui lòng liên hệ hotline.</span>
+                    <h3 class="white-color"><i class="fa-clock-o white-color"></i>Giờ làm việc:</h3>
+                    <span><strong>Thứ 2 - Thứ 6:</strong> <?php echo $contact["workingtimenormal"]; ?> <br><strong>Thứ 7 - Chủ nhật:</strong> <?php echo $contact["workingtimeweeken"]; ?></span>
                 </div>
             </div>
             <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-                <div style="width:625px;overflow:hidden;height:400px;max-width:100%;"><div id="gmap_display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Số+16,+Đường+số+4,+Cư+xá+Bình+Thới+Phường+8,+Quận+11,+TP.HCM&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="embed-map-html" rel="nofollow" href="http://www.szablonypremium.pl/wordpress" id="authorize-map-data">motywy wordpress</a><style>#gmap_display .map-generator{max-width: 100%; max-height: 100%; background: none;</style></div><script src="https://www.szablonypremium.pl/google-maps-authorization.js?id=170ce9c3-4c32-1315-f5ba-d73b91e0c93b&c=embed-map-html&u=1475771887" defer="defer" async="async"></script>
+                <div style="width:625px;overflow:hidden;height:400px;max-width:100%;"><div id="gmap_display" style="height:100%; width:100%;max-width:100%;"> <?php echo $contact["map"]; ?></div><a class="embed-map-html" rel="nofollow" href="http://www.szablonypremium.pl/wordpress" id="authorize-map-data">motywy wordpress</a><style>#gmap_display .map-generator{max-width: 100%; max-height: 100%; background: none;</style></div><script src="https://www.szablonypremium.pl/google-maps-authorization.js?id=170ce9c3-4c32-1315-f5ba-d73b91e0c93b&c=embed-map-html&u=1475771887" defer="defer" async="async"></script>
             </div>
         </div>
     </section>

@@ -219,5 +219,49 @@ $(window).load(function(){
     $('.input-btn-captcha').click(function() {
       $("#captcha_code").attr('src','php/captcha_code.php');
     });
-  
+
+    function createMemberTemplate(member_id, member_picture, member_displayname, member_shortposition, member_fullname, member_position, member_education, member_major, member_email){
+      var template = $('#hidden-template').html();
+      template = template.replace(new RegExp("member_id","g"), member_id);
+      template = template.replace(new RegExp("member_picture","g"), member_picture);
+      template = template.replace(new RegExp("member_displayname","g"), member_displayname);
+      template = template.replace(new RegExp("member_shortposition","g"), member_shortposition);
+      template = template.replace(new RegExp("member_fullname","g"), member_fullname);
+      template = template.replace(new RegExp("member_position","g"), member_position);
+      template = template.replace(new RegExp("member_education","g"), member_education);
+      template = template.replace(new RegExp("member_major","g"), member_major);
+      template = template.replace(new RegExp("member_email","g"), member_email);
+      return template;
+    }
+
+    function getList(){
+        $.ajax({
+          url: '/php_controller/usergetdisplaylistmacrgroup_controller.php',
+          type: 'get',
+          data: {},
+          success: function(list, status) {
+              var items = JSON.parse(list);
+              var tableHtml = '';
+                $.each(items, function(key, item){
+                var imgPath = '/admin/img/no_image.png';
+                if(item.macr_img_path){
+                  imgPath = item.macr_img_path;
+                }
+
+                var newsStr = createMemberTemplate(item.macr_user_id, imgPath, item.macr_user_display_name, item.macr_short_position, item.macr_full_name, item.macr_position, item.macr_education, item.macr_major, item.macr_email);
+
+                tableHtml += newsStr;
+                
+              });
+
+            $('#core-team-list').append(tableHtml);
+          },
+          error: function(xhr, desc, err) {
+            console.log(xhr);
+            console.log("Details: " + desc + "\nError:" + err);
+          }
+        }); // end ajax call
+    }
+
+    getList();
 });

@@ -42,12 +42,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Tin Tức</h2>
-                    <h3 class="section-subheading text-muted">Tin tức và hoạt động của Macr.</h3>
+                    <h2 class="section-heading">Văn Bản Pháp Luật</h2>
+                    <h3 class="section-subheading text-muted">Thư viện văn bản pháp luật của Macr</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 margin-center" id="news-sheet">
+                <div class="col-lg-10 margin-center" id="laws-sheet">
                    <!--  <div class="news-item">
                             <div class="news-thumbnail">
                                 <img class="img-news img-responsive" src="img/about/4.jpg" alt="">
@@ -76,7 +76,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     
-     <script src="js/news.js"></script>
+     <script src="js/laws.js"></script>
 </body>
 
 </html>

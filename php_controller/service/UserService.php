@@ -34,7 +34,7 @@ class UserService
 	public function getDisplayUsersMacr(){
 		$condition = array('macr' => 1);
 		$column = array('macr_user_id','macr_email', 'macr_full_name', 'macr_position', 'macr_education', 'macr_major', 'macr_img_path','macr_user_display_name','macr_short_position');
-		$this->db->set_limit(0, 8);
+		$this->db->set_limit(0, 10);
 		$this->db->set_orderby('macr_order	','ASC');
 		return $this->db->get_rows($this->tableName, $condition, false, $column);
 	}

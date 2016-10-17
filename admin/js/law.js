@@ -19,7 +19,7 @@ $(function() {
             var editHtml = '<button class="btn btn-primary control-button-edit" itemid="'+ item.macr_law_id +'" data-target="#new-dialog" data-toggle="modal">Sửa</button>';
             var deleteHtml = '<a class="btn btn-primary control-button-delete" href="/php_controller/lawdelete_controller.php?itemid=' + item.macr_law_id + '" onclick="return confirm(\'Bạn có muốn xoá sách này?\');">Xoá</a>';
 
-            tableHtml += '<tr><td><img src="'+ imgPath +'" class="userlist-img"/></td><td>' + item.macr_law_id + '</td><td><div class="shortent-text">' + item.macr_law_titile + '</div></td><td>'+ item.macr_law_content + '</td><td>'+ item.macr_law_date + '</td><td>'+ editHtml + deleteHtml +'</td></tr>';
+            tableHtml += '<tr><td><img src="'+ imgPath +'" class="userlist-img"/></td><td>' + item.macr_law_id + '</td><td>' + item.macr_law_titile + '</td><td><div class="shortent-text">'+ item.macr_law_content + '</div></td><td>'+ item.macr_law_date + '</td><td>'+ editHtml + deleteHtml +'</td></tr>';
             
           });
         if (items.length < 10) {

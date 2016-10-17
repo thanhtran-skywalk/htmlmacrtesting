@@ -13,10 +13,10 @@ class LibService
 		$this->db = new BaseDAO();
 	}
 
-	public function getLawDocsList($page){
+	public function getLawDocsList($page, $limit){
 		$startIndex = $page * $this->pageSize;
 		$this->db->set_orderby('macr_law_date','DESC');
-		$this->db->set_limit($startIndex, $this->pageSize);
+		$this->db->set_limit($startIndex, $limit);
 		
 		return $this->db->get_all($this->tableName);
 	}

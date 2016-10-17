@@ -6,8 +6,13 @@ include 'service/LibService.php';
 	 	$page = $_GET['page'];	
 	}
 
+	$limit = 10;
+	if(!empty($_GET['limit'])){
+		$limit = $_GET['limit'];
+	}
+
  	$libService = new LibService();
-	$rs = $libService->getLawDocsList($page);
+	$rs = $libService->getLawDocsList($page, $limit);
 	
 	echo json_encode($rs);
 ?>

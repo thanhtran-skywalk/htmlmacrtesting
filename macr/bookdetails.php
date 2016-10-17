@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading" id="title"></h2>
-                    <h3 class="section-subheading text-muted" id="date-pub"></h3>
+                    <h3 class="section-subheading text-muted" id="author"></h3>
                 </div>
             </div>
             <div class="row">
@@ -63,11 +63,11 @@
         <div class="container center-element">
             <div class="row">
                 <div class="col-lg-12 text-center" style="margin-bottom: 20px;">
-                    <h2 class="section-heading">Bài Mới Nhất</h2>
+                    <h2 class="section-heading">Sách Mới Nhất</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12" id="news-row">
+                <div class="col-lg-12" id="books-row">
                    
                 </div>
             </div>
@@ -81,7 +81,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     
-     <script src="js/newsdetails.js"></script>
+     <script src="js/bookdetails.js"></script>
 
 
 

@@ -13,10 +13,10 @@ class BookService
 		$this->db = new BaseDAO();
 	}
 
-	public function getBookList($page){
+	public function getBookList($page, $limit=10){
 		$startIndex = $page * $this->pageSize;
 		$this->db->set_orderby('macr_book_publish_date','DESC');
-		$this->db->set_limit($startIndex, $this->pageSize);
+		$this->db->set_limit($startIndex, $limit);
 
 		return $this->db->get_all($this->tableName);
 	}

@@ -41,76 +41,29 @@
 
 
 
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
-
-
 </head>
 <body>
 <div style="overflow:hidden;" id="testimonial-carousel-header" class="owl-carousel owl-theme testimonial-carousel">
-    <header class="header banner-finacial" ><!--header-start-->
-        <div class="container">
-            <figure class="logo animated fadeInDown delay-07s">
-                <a href="#"><img src="img/logo/logo_150_white.png" height="130" width="130" alt=""></a> 
-            </figure>   
-            <h1 class="animated fadeInDown delay-07s header-welcome">WELL COME TO MACRGROUP BROTHERS!</h1>
-            <ul class="we-create animated fadeInUp delay-1s">
-                <li class="sub-welcome">“If someone offers you an amazing opportunity and you're not sure you can do it, say yes - then learn how to do it later.” <br />- Richard Branson -</li>
-            </ul>
-                <a class="link animated fadeInUp delay-1s" href="/macr">Tìm hiểu thêm...</a>
-        </div>
-    </header><!--header-end-->
-    <header class="header banner-coffee"><!--header-start-->
-        <div class="container">
-            <figure class="logo animated fadeInDown delay-07s">
-                <a href="#"><img src="img/logo/logo_150_dark_solid.png" height="130" width="130" alt=""></a> 
-            </figure>   
-            <h1 class="animated fadeInDown delay-07s header-welcome">Công ty Cổ phần MACRGROUP BROTHERS</h1>
-            <ul class="we-create animated fadeInUp delay-1s">
-                <li class="sub-welcome">“Chúng tôi có thể nỗ lực để mất tiền, thậm chí rất nhiều tiền, nhưng chúng tôi không thể để mất danh tiếng, thậm chí chỉ một chút danh tiếng. Cần 20 năm để xây dựng danh tiếng nhưng chỉ cần 5 phút là có thể hủy hoại nó." <br /> - Warren Buffett -</li>
-            </ul>
-                <a class="link animated fadeInUp delay-1s" href="/macr">Tìm hiểu thêm...</a>
-        </div>
-        </header><!--header-end-->
-    <header class="header banner-coffee"><!--header-start-->
-        <div class="container">
-            <figure class="logo animated fadeInDown delay-07s">
-                <a href="#"><img src="img/logo/logo_150_dark_solid.png" height="130" width="130" alt=""></a> 
-            </figure>   
-            <h1 class="animated fadeInDown delay-07s header-welcome">Công ty TNHH Nông nghiệp K & Brothers</h1>
-            <ul class="we-create animated fadeInUp delay-1s">
-                <li class="sub-welcome">“Trước khi bắt đầu một công việc mới, tôi thường tự hỏi mình, liệu việc có ích cho xã hội không? Nếu không, có thể tôi sẽ suy nghĩ lại về việc bắt đầu nó. Nếu có, mỗi khi gặp khó khăn hay khi sắp gục ngã, tôi sẽ nhớ lại lý do tôi bắt đầu nó. Hít thật sâu. Và làm tới luôn" <br /> - CEO X -</li>
-            </ul>
-                <a class="link animated fadeInUp delay-1s" href="#">Tìm hiểu thêm...</a>
-        </div>
-    </header><!--header-end-->
-    <header class="header banner-library"><!--header-start-->
-        <div class="container">
-            <figure class="logo animated fadeInDown delay-07s">
-                <a href="#"><img src="img/logo/logo_150_dark.png" height="130" width="130"  alt=""></a> 
-            </figure>   
-            <h1 class="animated fadeInDown delay-07s header-welcome">Cafe Tony Phạm</h1>
-            <ul class="we-create animated fadeInUp delay-1s">
-                <li class="sub-welcome">“Note: Đây không phải là quán cà phê. Nếu bạn đến đây để uống cà phê thì tốt nhất là bạn nên mua cà phê của K & Brothers rồi về nhà tự pha. Vừa tiết kiệm tiền bạc, thời gian lại vừa có thêm trải nghiệm mới. K & Brothers có cà phê sạch và ngon cho bạn. X sẽ hướng dẫn bạn cách chọn cà phê ngon và cách pha 1 ly cà phê đúng điệu Crazy Dog. Còn nếu bạn đến đây để tìm kiếm tri thức hay để tìm kiếm các ý tưởng mới cho công việc của mình, hãy đến với Cafe Tony Phạm! <br />Chúng tôi không bán cà phê. Chúng tôi truyền cảm hứng để bạn sáng tạo ra các ý tưởng mới. Đó là sứ mệnh của Cafe Tony Phạm!</li>
-            </ul>
-                <a class="link animated fadeInUp delay-1s" href="#">Tìm hiểu thêm...</a>
-        </div>
-        </header><!--header-end-->
-    <header class="header banner-library"><!--header-start-->
-        <div class="container">
-            <figure class="logo animated fadeInDown delay-07s">
-                <a href="#"><img src="img/logo/logo_150_dark.png" height="130" width="130"  alt=""></a> 
-            </figure>   
-            <h1 class="animated fadeInDown delay-07s header-welcome">Thư viện Cộng đồng Snowball</h1>
-            <ul class="we-create animated fadeInUp delay-1s">
-                <li class="sub-welcome">“Đây là tài sản lớn nhất của nhân loại. Bạn được có nó miễn phí, không bao giờ bạn bị mất nó và ai chiếm đoạt của bạn được - SÁCH & TRI THỨC. <br />MACRGROUP riêng tặng cho anh em và cộng đồng học sinh THPT."</li>
-            </ul>
-                <a class="link animated fadeInUp delay-1s" href="#">Tìm hiểu thêm...</a>
-        </div>
-    </header><!--header-end-->
+    <?php 
+        include 'php_controller/service/BannerService.php';
+        $bannerService = new BannerService();
+        $rs = $bannerService->getList();
+        foreach ($rs as $banner) { ?>
+
+        <header class="header banner-top" style="background: url(<?php echo $banner['macr_image']; ?>) no-repeat;">
+            <div class="container">
+                <figure class="logo animated fadeInDown delay-07s">
+                    <a href="#"><img src="<?php echo $banner['macr_logo']; ?>" height="130" width="130" alt=""></a> 
+                </figure>   
+                <h1 class="animated fadeInDown delay-07s header-welcome"><?php echo $banner['macr_title']; ?></h1>
+                <ul class="we-create animated fadeInUp delay-1s">
+                    <li class="sub-welcome"><?php echo $banner['macr_short_slogan']; ?></li>
+                </ul>
+                    <a class="link animated fadeInUp delay-1s" href="<?php echo $banner['macr_url']; ?>">Tìm hiểu thêm...</a>
+            </div>
+        </header>
+
+    <?php } ?>
 </div>
 
 
@@ -134,17 +87,18 @@
         <div class="overlay">
             <div class="container padding-top-large">
                 <?php
-                    $about_data = file_get_contents('data/about_us.json');
-                    $aboutdata = json_decode($about_data, true);
+                     include 'php_controller/service/IntroService.php';
+                     $introService = new IntroService();
+                     $intro = $introService->findByType("0");
                  ?>
                 <h2 class="margin-top-big">Chúng tôi là ai?</h2>
-                <h6 style="margin-bottom:30px;">“Tháng 09.2016".</h6>
+                <h6 style="margin-bottom:30px;"><?php echo $intro["sub_description"]; ?></h6>
                 <div class="row">
                     <div>
                         <div class="col-md-5 text-right wow fadeInRight delay-02s" style="float:right;">
                                 <img src="img/logo/logo_300.png" alt="About Us Big Image" class="center-block img-responsive" height="160" />
                             </div>
-                                    <div class="about-us-content wow slideInUp" style="padding: 0 10px 0 20px;"><?php echo $aboutdata["about_description"]; ?></div>
+                                    <div class="about-us-content wow slideInUp" style="padding: 0 10px 0 20px;"><?php echo $intro["macr_intro_content"]; ?></div>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -166,7 +120,7 @@
                                 </div> <!-- *** end panel-heading *** -->
                                 <div id="collapseZero" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
-                                      <?php echo $aboutdata["about_story"]; ?>
+                                      <?php echo $intro["macr_story"]; ?>
                                     </div>
                                 </div> <!-- *** end collapsed item *** -->
                             </div> <!-- *** end panel *** -->
@@ -187,7 +141,7 @@
                                 <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
                                         <ul>
-                                            <?php echo $aboutdata["about_history"]; ?>
+                                            <?php echo $intro["adviser"]; ?>
                                         </ul>
                                     </div>
                                 </div> <!-- *** end collapsed item *** -->
@@ -206,7 +160,7 @@
                                     </div>
                                 </div> <!-- *** end panel-heading *** -->
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="panel-body"><?php echo $aboutdata["about_destiny"]; ?>
+                                    <div class="panel-body"><?php echo $intro["core_value"]; ?>
                                     </div>
                                 </div> <!-- *** end collapsed item *** -->
                             </div> <!-- *** end panel *** -->
@@ -224,7 +178,7 @@
                                     </div>
                                 </div> <!-- *** end panel-heading *** -->
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body"><?php echo $aboutdata["about_core_value"]; ?>
+                                    <div class="panel-body"><?php echo $intro["destiny"]; ?>
                                     </div>
                                 </div> <!-- *** end collapsed item *** -->
                             </div> <!-- *** end panel *** -->
@@ -422,64 +376,60 @@
     </div>
 </section><!--main-section-end-->
 
+<script id="hidden-template" type="text/x-custom-template">
+     <div class="team-leader-box">
+        <div class="team-leader wow fadeInDown delay-09s"> 
+            <div class="team-leader-shadow" data-toggle="modal" data-target="#team-member-member_id"><a href="#"></a></div>
+                <img src="member_picture" alt="">
+            <ul>
+               <li><a href="#" data-toggle="modal" class="lead-profile" data-target="#team-member-member_id">Thông tin...</a></li>
+            </ul>
+        </div>
+        <h3 class="wow fadeInDown delay-09s">member_displayname</h3>
+        <span class="wow fadeInDown delay-09s">member_shortposition</span>
+    </div>
+    <div class="modal fade contact-form" id="team-member-member_id" tabindex="-1" role="dialog" aria-labelledby="team-member" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body member-info">
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5">
+                                <figure>
+                                    <div class="team-leader details"> 
+                                        <img src="member_picture" alt="">
+                                    </div>  
+                                </figure>
+                            </div>
+                            <div class="col-md-7 col-sm-7">
+                                <div class="description details">
+                                    <h3><strong class="bold-text">member_fullname</strong></h3>
+                                    <div class="light-text full-pos">member_position</div>
+                                    <div class="about margin-top-small">
+                                        <ul style="padding-left: 19px;">
+                                            <li class="li-leader-details"><span class="leader-details-description">Học vấn:</span>member_education</li>
+                                            <li class="li-leader-details"><span class="leader-details-description">Chuyên môn:</span>member_major</li>
+                                            <li class="li-leader-details"><span class="leader-details-description">Email:</span>member_email</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</script>
+
 <!-- start Team-->
 <section class="main-section team" id="team"><!--main-section team-start-->
     <div class="container">
         <h2>Ban Lãnh Đạo</h2>
         <h6>Nhiệt tình hỗ trợ - Đam mê công việc - Quyết tâm vượt qua khó khăn - Sáng tạo trong từng sản phẩm - Tương tác với khách hàng và nội bộ anh em - Truyền cảm hứng - Hành động</h6>
-        <div class="team-leader-block clearfix">
-            <?php
-                $json_data = file_get_contents('data/teamdata.json');
-                $data = json_decode($json_data, true);
-                for ($i = 0; $i < 10; $i++) {
-             ?>
-            <div class="team-leader-box">
-                <div class="team-leader wow fadeInDown delay-09s"> 
-                    <?php echo '<div class="team-leader-shadow" data-toggle="modal" data-target="#team-member-'.$i.'"><a href="#"></a></div>'; ?> 
-
-                    <?php echo '<img src="img/team/'.$data[$i]["picture"].'" alt="">'; ?>
-                    <ul>
-                       <li><?php echo '<a href="#" data-toggle="modal" class="lead-profile" data-target="#team-member-'.$i.'">Thông tin...</a>'; ?> </li>
-                    </ul>
-                </div>
-                <h3 class="wow fadeInDown delay-09s"><?php echo $data[$i]["nickname"]; ?></h3>
-                <span class="wow fadeInDown delay-09s"><?php echo $data[$i]["position"]; ?></span>
-            </div>
-            <?php echo '<div class="modal fade contact-form" id="team-member-'.$i.'" tabindex="-1" role="dialog" aria-labelledby="team-member" aria-hidden="true">'; ?>
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <div class="modal-body member-info">
-                                    <div class="row">
-                                        <div class="col-md-5 col-sm-5">
-                                            <figure>
-                                                <div class="team-leader details"> 
-                                                    <?php echo '<img src="img/team/'.$data[$i]["picture"].'" alt="">'; ?>
-                                                </div>  
-                                            </figure>
-                                        </div>
-                                        <div class="col-md-7 col-sm-7">
-                                            <div class="description details">
-                                                <h3><strong class="bold-text"><?php echo $data[$i]["realname"]; ?></strong></h3>
-                                                <div class="light-text full-pos"><?php echo $data[$i]["full"]; ?></div>
-                                                <div class="about margin-top-small">
-                                                    <ul style="padding-left: 19px;">
-                                                        <li class="li-leader-details"><span class="leader-details-description">Học vấn:</span><?php echo $data[$i]["education"]; ?></li>
-                                                        <li class="li-leader-details"><span class="leader-details-description">Chuyên môn:</span><?php echo $data[$i]["major"]; ?></li>
-                                                        <li class="li-leader-details"><span class="leader-details-description">Email:</span><?php echo $data[$i]["email"]; ?> </li>
-                                                    </ul>
-                                                </div>
-                                                
-                                            </div> <!-- *** end description *** -->
-                                        </div> <!-- *** end col-md-7 *** -->
-                                    </div> <!-- *** end row *** -->
-                                </div> <!-- *** end modal-body *** -->
-                            </div> <!-- *** end modal-content *** -->
-                        </div> <!-- *** end modal-dialog *** -->
-                </div> <!-- *** end Contact Form modal *** -->
-                <?php } ?>
+        <div class="team-leader-block clearfix" id="core-team-list">
+           
         </div>
     </div>
 </section><!--main-section team-end-->
@@ -645,25 +595,26 @@
     
         <div class="row">
             <div class="col-lg-6 col-sm-7 wow fadeInLeft">
-                <?php
-                    $contact_data = file_get_contents('data/contact.json');
-                    $contactdata = json_decode($contact_data, true);
+                <?php 
+                    include 'php_controller/service/ContactService.php';
+                    $contactService = new ContactService();
+                    $contact = $contactService->findById("1");                                  
                 ?>
                 <div class="contact-info-box address clearfix">
                     <h3><i class="fa-map-marker"></i>Địa chỉ:</h3>
-                    <span><?php echo $contactdata["address"]; ?></span>
+                    <span><?php echo $contact["adress"]; ?></span>
                 </div>
                 <div class="contact-info-box phone clearfix">
                     <h3><i class="fa-phone"></i>Điện thoại:</h3>
-                    <span><?php echo $contactdata["phone"]; ?></span>
+                    <span><?php echo $contact["phone"]; ?></span>
                 </div>
                 <div class="contact-info-box email clearfix">
                     <h3><i class="fa-pencil"></i>Email:</h3>
-                    <span><?php echo $contactdata["email"]; ?></span>
+                    <span><?php echo $contact["email"]; ?></span>
                 </div>
                 <div class="contact-info-box hours clearfix">
                     <h3><i class="fa-clock-o"></i>Giờ làm việc:</h3>
-                    <span><strong>Thứ 2 - Thứ 6:</strong> <?php echo $contactdata["worktime_mon_fri"]; ?><br><strong>Thứ 7 - Chủ nhật:</strong> <?php echo $contactdata["worktime_sat_sun"]; ?></span>
+                    <span><strong>Thứ 2 - Thứ 6:</strong> <?php echo $contact["workingtimenormal"]; ?><br><strong>Thứ 7 - Chủ nhật:</strong> <?php echo $contact["workingtimeweeken"]; ?></span>
                 </div>
                 <ul class="social-link">
                     <li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
@@ -697,7 +648,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
-        <span class="copyright">Bản quyền thuộc về CTCP MACRGROUP BROTHERS - Địa chỉ: 16 đường số 4, CX Bình Thới, P.8, Q.11, Tp.HCM |Giấy phép ĐKKD số:0314035148|Made by <a href="#">Thành Trần</a></span>
+        <span class="copyright">Bản quyền thuộc về CTCP MACRGROUP BROTHERS - Đ/c: Số 16 đường số 4, P.8, Q.11, Tp.HCM|Giấy phép số:0314035148|Hotline: 0902038558| Made by <a href="#">Thành Trần</a></span>
     </div>
     <!-- 
         All links in the footer should remain intact. 

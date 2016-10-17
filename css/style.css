@@ -1005,9 +1005,14 @@ border: 2px solid #fff;
     position: relative;
     padding: 0px;
 }
+
+.banner-top{
+	background-size: cover !important;
+    position: relative;
+}/*
 .banner-finacial {
 	background: url(../img/finalcial.jpg) no-repeat;
-    background-size: cover;
+    background-size: cover ;
     position: relative;
 }
 .banner-coffee {
@@ -1019,7 +1024,7 @@ border: 2px solid #fff;
 	background: url(../img/library.jpg) no-repeat center;
     background-size: cover;
     position: relative;
-}
+}*/
 .menu-logo{
 	height: 65px;
     width: auto;
@@ -1108,4 +1113,7 @@ li.li-leader-details {
 .col-md-8-change{
 	padding: 0px 10px;
 	margin-bottom: 20px;
+}
+.ismacrgroup, .ismacrgroup input[type=radio]{
+	display: inline-block;
 }

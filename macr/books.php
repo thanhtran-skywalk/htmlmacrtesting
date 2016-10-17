@@ -42,25 +42,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Tin Tức</h2>
-                    <h3 class="section-subheading text-muted">Tin tức và hoạt động của Macr.</h3>
+                    <h2 class="section-heading">Sách</h2>
+                    <h3 class="section-subheading text-muted">Sách của Macr.</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 margin-center" id="news-sheet">
-                   <!--  <div class="news-item">
-                            <div class="news-thumbnail">
-                                <img class="img-news img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="news-content">
-                                <div class="news-title">
-                                    <h4>March 2011</h4>
-                                </div>
-                                <div class="news-preview">
-                                    <p class="text-muted news">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam</p>
-                                </div>
-                            </div>
-                    </div> -->
+                <div class="col-lg-10 margin-center" id="book-sheet">
+                   
                    
                 </div>
             </div>
@@ -76,7 +64,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     
-     <script src="js/news.js"></script>
+     <script src="js/books.js"></script>
 </body>
 
 </html>
