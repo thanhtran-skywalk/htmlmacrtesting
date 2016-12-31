@@ -958,7 +958,7 @@ border: 2px solid #fff;
     border-radius: 50%;
 }
 .what-customer-said-h2{
-	color: #fff;
+	color: #fed136;
 }
 .back-to-top {
     position: fixed;
@@ -1117,3 +1117,22 @@ li.li-leader-details {
 .ismacrgroup, .ismacrgroup input[type=radio]{
 	display: inline-block;
 }
+.header-custom{
+	padding-top: 50px;
+    margin-bottom: 125px;
+}
+
+.ul-custom{
+	text-align: left;
+    padding-left: 20px;
+}
+
+p.rssfeed-des{
+	font-size: 18px !important;
+}
+p.rssfeed-des a{
+	color: #fed136;
+}
+.rssfeed-title li strong{ font-size: 24px; }
+.rssfeed-title li strong a {color: #fff; }
+.col-md-8-change.intro-hide-div { padding: 0 5%;}

@@ -51,16 +51,16 @@
         foreach ($rs as $banner) { ?>
 
         <header class="header banner-top" style="background: url(<?php echo $banner['macr_image']; ?>) no-repeat;">
-            <div class="container">
+            <div class="container header-custom">
                 <figure class="logo animated fadeInDown delay-07s">
                     <a href="#"><img src="<?php echo $banner['macr_logo']; ?>" height="130" width="130" alt=""></a> 
                 </figure>   
                 <h1 class="animated fadeInDown delay-07s header-welcome"><?php echo $banner['macr_title']; ?></h1>
-                <ul class="we-create animated fadeInUp delay-1s">
-                    <li class="sub-welcome"><?php echo $banner['macr_short_slogan']; ?></li>
-                </ul>
-                    <a class="link animated fadeInUp delay-1s" href="<?php echo $banner['macr_url']; ?>">Tìm hiểu thêm...</a>
+                <a class="link animated fadeInUp delay-1s" href="<?php echo $banner['macr_url']; ?>">Tìm hiểu thêm...</a>
             </div>
+            <ul class="we-create animated fadeInUp delay-1s ul-custom">
+                <li class="sub-welcome"><?php echo $banner['macr_short_slogan']; ?></li>
+            </ul>
         </header>
 
     <?php } ?>
@@ -71,19 +71,19 @@
 <nav class="main-nav-outer" id="test"><!--main-nav-start-->
     <div class="container">
         <ul class="main-nav">
-            <li><a href="#testimonial-carousel-header">Trang chủ</a></li>
-            <li><a href="#id-macr">MACR</a></li>
-            <li><a href="#id-dautu">ĐẦU TƯ</a></li>
-            <li class="small-logo"><a href="#testimonial-carousel-header"><img class="menu-logo" src="img/logo/small-logo2.jpg" alt=""></a></li>
-            <li><a href="#testimonial">TIN TỨC</a></li>
-            <li><a href="#team">CHÚNG TÔI</a></li>
+            <li><a href="#about-us">TRANG CHỦ</a></li>
+            <li><a href="#id-macr">ĐỊNH GIÁ</a></li>
+            <li><a href="#id-dautu">M&A</a></li>
+            <li class="small-logo"><a href="#about-us"><img class="menu-logo" src="img/logo/small-logo2.jpg" alt=""></a></li>
+            <li><a href="#testimonial">KHỞI NGHIỆP</a></li>
+            <li><a href="#team">THƯ VIỆN</a></li>
             <li><a href="#contact">LIÊN HỆ</a></li>
         </ul>
         <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
     </div>
 </nav><!--main-nav-end-->
 
-<section id="about-us" class="main-section about-us">
+    <section id="about-us" class="main-section about-us">
         <div class="overlay">
             <div class="container padding-top-large">
                 <?php
@@ -92,19 +92,21 @@
                      $intro = $introService->findByType("0");
                  ?>
                 <h2 class="margin-top-big">Chúng tôi là ai?</h2>
-                <h6 style="margin-bottom:30px;"><?php echo $intro["sub_description"]; ?></h6>
+                <h6 style="margin-bottom:20px;"><?php echo $intro["sub_description"]; ?></h6>
                 <div class="row">
                     <div>
+                    <!--
                         <div class="col-md-5 text-right wow fadeInRight delay-02s" style="float:right;">
                                 <img src="img/logo/logo_300.png" alt="About Us Big Image" class="center-block img-responsive" height="160" />
                             </div>
-                                    <div class="about-us-content wow slideInUp" style="padding: 0 10px 0 20px;"><?php echo $intro["macr_intro_content"]; ?></div>
+                            -->
+                        <div class="about-us-content wow slideInUp wow fadeInRight delay-02s" style="padding: 0 10px 0 20px;"><?php echo $intro["macr_intro_content"]; ?></div>
                     </div>
                     <div class="clearfix"></div>
                 </div>
                 
                 <div class="row margin-top-medium">
-                    <div class="col-md-8-change">
+                    <div class="col-md-8-change intro-hide-div">
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <!-- =========================
                                Collapsible Panel 0
@@ -114,7 +116,7 @@
                                     <div class="panel-title">
                                         <a href="#collapseZero" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" aria-controls="collapseZero">
                                             <i class="fa-book" style="color: #e74c3c;"></i>
-                                            <strong style="margin-left: 12px;">Chuyện nhà MACR</strong>
+                                            <strong style="margin-left: 12px;">Ban lãnh đạo</strong>
                                         </a>
                                     </div>
                                 </div> <!-- *** end panel-heading *** -->
@@ -155,7 +157,7 @@
                                     <div class="panel-title">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                             <i class="fa-globe" style="color: #e74c3c;"></i>
-                                            <strong style="margin-left: 12px;">Tầm nhìn</strong>
+                                            <strong style="margin-left: 12px;">Tầm nhìn - Sứ mệnh - Giá trị cốt </strong>
                                         </a>
                                     </div>
                                 </div> <!-- *** end panel-heading *** -->
@@ -173,7 +175,7 @@
                                     <div class="panel-title">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                             <i class="fa-heart" style="color: #e74c3c;"></i>
-                                            <strong style="margin-left: 12px;">Sứ mệnh</strong>
+                                            <strong style="margin-left: 12px;">Bộ Quy tắc ứng xử</strong>
                                         </a>
                                     </div>
                                 </div> <!-- *** end panel-heading *** -->
@@ -182,6 +184,37 @@
                                     </div>
                                 </div> <!-- *** end collapsed item *** -->
                             </div> <!-- *** end panel *** -->
+
+
+                            <div class="row text-center why-choose-us" style="margin-top: 45px;">
+
+                                <!-- *****  Service Single ***** -->
+                                <div class="col-md-4">
+                                    <div class="service wow slideInLeft">
+                                        <div class="icon"><i class="icon-idea"></i></div>
+                                        <h4>Chính sách nhân sự</h4>
+                                        <p>Con người chính là cốt lõi của doanh nghiệp</p>
+                                    </div>
+                                </div>
+
+                                <!-- *****  Service Single ***** -->
+                                <div class="col-md-4">
+                                    <div class="service wow fadeInUp">
+                                        <div class="icon"><i class="icon-heart"></i></div>
+                                        <h4>Cơ hội nghề nghiệp</h4>
+                                        <p>Hãy nhắm thẳng tới mục tiêu bằng đam mê và sự kiên trì. Và tập trung những sức mạnh như những tia sáng đi qua thấu kính hội tụ, bạn sẽ đốt cháy tất cả những khó khăn đó.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="service wow slideInRight">
+                                        <div class="icon"><i class="icon-office"></i></div>
+                                        <h4>Văn phòng đại diện</h4>
+                                        <p>Địa chỉ: Số điện thoại: Người phụ trách.</p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div> <!-- *** end row *** -->
+
                         </div> <!-- *** end panel-group *** -->
                     </div> <!-- *** end col-md-8 *** -->
                 </div>
@@ -189,328 +222,41 @@
         </div>
     </section> <!-- *** end About Us *** -->
 
-<section class="main-section paddind" id="id-macr"><!--main-section-start-->
-    <div class="container">
-        <h2>Macr</h2>
-        <h6>Chúng tôi không đơn thuần cung cấp dịch vụ tài chính. Chúng tôi muốn hỗ trợ và tư vấn cho bạn bằng tinh thần tận tụy để công việc của các bạn thuận lợi hơn. Xa hơn nữa, chúng tôi muốn đem đến cho bạn tất cả những tri thức về định giá và tài chính mà anh em nhà MACR tích lũy được.</h6>
-      <div class="portfolioFilter">  
-        <ul class="Portfolio-nav wow fadeIn delay-02s">
-            <li><a href="#" data-filter=".about-macr" class="current" id="macr-about-macr-tap">VỀ MACR</a></li>
-            <li><a href="#" data-filter=".m-and-a" >M&A</a></li>
-            <li><a href="#" data-filter=".appraisal" >APPRAISAL</a></li>
-            <li><a href="#" data-filter=".consult" >CONSULT</a></li>
-            <li><a href="#" data-filter=".r-and-d" >R&D</a></li>
-            <li><a href="#" data-filter=".library-macr" >THƯ VIỆN MACR</a></li>
-            <li><a href="#" data-filter=".company-map" >SƠ ĐỒ CÔNG TY</a></li></a></li>
-        </ul>
-       </div> 
-        
-    </div>
-    <div class="portfolioContainer wow fadeInUp delay-04s">
-                <div class=" Portfolio-box about-macr">
-                    <a href="/macr/index.php#nav-introduce"><img src="img/macr_intro.jpg" alt=""></a>   
-                    <h3>Giới thiệu</h3>
-                    <p>Introduce</p>
-                </div>
-                <div class="Portfolio-box about-macr">
-                    <a href="/macr#portfolio"><img src="img/macr_services.jpg" alt=""></a>   
-                    <h3>Dịch vụ</h3>
-                    <p>Service</p>
-                </div>
-                <div class=" Portfolio-box about-macr">
-                    <a href="#"><img src="img/macr_board.jpg" alt=""></a>   
-                    <h3>Ban Lãnh đạo</h3>
-                    <p>Board</p>
-                </div>
-                <div class=" Portfolio-box about-macr">
-                    <a href="/macr#law_frame"><img src="img/macr_jurisdiction.jpg" alt=""></a>   
-                    <h3>Khung pháp lý</h3>
-                    <p>Juridical</p>
-                </div>
-                 <div class=" Portfolio-box about-macr">
-                    <a href="#"><img src="img/macr_standards.jpg" alt=""></a>   
-                    <h3>Bộ Tiêu chuẩn</h3>
-                    <p>Standards</p>
-                </div>
-                <div class=" Portfolio-box about-macr">
-                    <a href="#"><img src="img/macr_structure.jpg" alt=""></a>   
-                    <h3>Sơ đồ nhân sự</h3>
-                    <p>MACR Structure</p>
-                </div>
-
-
-                <div class=" Portfolio-box m-and-a">
-                    <a href="/macr#service_a_1"><img src="img/Portfolio-pic1.jpg" alt=""></a>   
-                    <h3>Merger</h3>
-                    <p>Sáp nhập</p>
-                </div>
-                <div class=" Portfolio-box m-and-a">
-                    <a href="#"><img src="img/Portfolio-pic1.jpg" alt=""></a>   
-                    <h3>Acquisitions</h3>
-                    <p>Mua lại</p>
-                </div>
-                <div class=" Portfolio-box m-and-a">
-                    <a href="/macr#service_a_3"><img src="img/macr_M_A_Advisory.jpg" alt=""></a>   
-                    <h3>M&A</h3>
-                    <p>Tư vấn M&A</p>
-                </div>
-
-                <div class="Portfolio-box appraisal">
-                    <a href="/macr#service_a_2"><img src="img/Portfolio-pic2.jpg" alt=""></a>   
-                    <h3>Định giá</h3>
-                    <p>Appraisal</p>
-                </div>
-                <div class="Portfolio-box appraisal">
-                    <a href="/macr#service_a_2"><img src="img/Portfolio-pic2.jpg" alt=""></a>   
-                    <h3>Động sản</h3>
-                    <p>Personalty</p>
-                </div>
-                <div class="Portfolio-box appraisal">
-                    <a href="/macr#service_a_2"><img src="img/macr_RealEstate.jpg" alt=""></a>   
-                    <h3>Bất động sản</h3>
-                    <p>Real estate</p>
-                </div>
-                <div class="Portfolio-box appraisal">
-                    <a href="/macr#service_a_2"><img src="img/macr_Brand.jpg" alt=""></a>   
-                    <h3>Thương hiệu</h3>
-                    <p>Brand valuation</p>
-                </div>
-                <div class="Portfolio-box appraisal">
-                    <a href="#"><img src="img/macr_StockMarket.jpg" alt=""></a>   
-                    <h3>Chứng khoán</h3>
-                    <p>Stock</p>
-                </div>
-                <div class="Portfolio-box appraisal">
-                    <a href="#"><img src="img/macr_OtherAssets.jpg" alt=""></a>   
-                    <h3>Tài sản khác</h3>
-                    <p>Others</p>
-                </div>
-                <div class="Portfolio-box consult">
-                    <a href="/macr#service_a_3"><img src="img/macr_ProjectEstimation.jpg" alt=""></a>   
-                    <h3>Tư vấn Dự toán</h3>
-                    <p>Estimation</p>
-                </div>
-                <div class="Portfolio-box consult">
-                    <a href="#"><img src="img/Portfolio-pic2.jpg" alt=""></a>   
-                    <h3>Thẩm định dự án</h3>
-                    <p>Project Evaluation</p>
-                </div>
-                <div class="Portfolio-box consult">
-                    <a href="/macr#service_a_3"><img src="img/macr_Startup.jpg" alt=""></a>   
-                    <h3>Tư vấn Startup</h3>
-                    <p>Startup</p>
-                </div>
-
-                <div class="Portfolio-box library-macr">
-                    <a href="/macr#service_a_5"><img src="img/macr_LawandEbooks.jpg" alt=""></a>   
-                    <h3>Luật và sách</h3>
-                    <p>Law and Ebook</p>
-                </div>
-                <div class="Portfolio-box library-macr">
-                    <a href="/macr#service_a_5"><img src="img/macr_Data.jpg" alt=""></a>   
-                    <h3>Dữ liệu</h3>
-                    <p>Data</p>
-                </div>
-                <div class="Portfolio-box library-macr">
-                    <a href="/macr#service_a_5"><img src="img/macr_PhotoGallery.jpg" alt=""></a>   
-                    <h3>Hình ảnh</h3>
-                    <p>Picture</p>
-                </div>
-                 <div class="Portfolio-box r-and-d">
-                    <a href="#"><img src="img/macr_Data.jpg" alt=""></a>   
-                    <h3>Mars 1.0</h3>
-                    <p>Data</p>
-                </div>
-                 <div class="Portfolio-box r-and-d">
-                    <a href="#"><img src="img/macr_Data.jpg" alt=""></a>   
-                    <h3>Mars 2.0</h3>
-                    <p>Tools</p>
-                </div>
-
-                <div class=" Portfolio-box company-map" >
-                    <a href="#"><img src="img/macr_Sitemap.jpg" alt=""></a>   
-                    <h3>Sơ đồ web</h3>
-                    <p>Map's Web</p>
-                </div>
-                <div class=" Portfolio-box company-map">
-                    <a href="#"><img src="img/Portfolio-pic6.jpg" alt=""></a>   
-                    <h3>Sơ đồ Nhân sự</h3>
-                    <p>Structure</p>
-                </div>
-                <div class=" Portfolio-box company-map">
-                    <a href="/macr#contact"><img src="img/macr_Sitemap.jpg" alt=""></a>   
-                    <h3>Bản đồ MACR</h3>
-                    <p>Map's MACR</p>
-                </div>
-    </div>
-</section><!--main-section-end-->
-
-<section class="main-section paddind" id="id-dautu" style="background-color: #eeeeee;"><!--main-section-start-->
-    <div class="container">
-        <h2>DANH MỤC ĐẦU TƯ</h2>
-        <h6>Tất cả tài sản từ danh mục đầu tư này bao gồm cả con người của MACRGROUP sẽ có 1 sứ mệnh duy nhất trong 20 năm tới: Xây dựng thành Trường Đại học Việt Nam Brothers - Vietnam Brothers University. </h6>
-      <div class="dautuFilter">  
-        <ul class="Portfolio-nav wow fadeIn delay-02s">
-            <li><a href="#" data-filter=".branding" class="current" id="macr-dautu-tap">THƯ VIỆN CỘNG ĐỒNG</a></li>
-            <li><a href="#" data-filter=".printdesign" >NÔNG NGHIỆP</a></li>
-            <li><a href="#" data-filter=".webdesign" >DU LỊCH VĂN HÓA</a></li>
-            <li><a href="#" data-filter=".printdesign" >CAFE TONY PHẠM</a></li>
-            <li><a href="#" data-filter=".printdesign" >DINH DƯỠNG HỌC</a></li>
-            <li><a href="#" data-filter=".photography" >SƠ ĐỒ NHÂN SỰ</a></li></a></li>
-        </ul>
-       </div> 
-        
-    </div>
-    <div class="dautuContainer wow fadeInUp delay-04s">
-                <div class=" Portfolio-box printdesign">
-                    <a href="#"><img src="img/Portfolio-pic1.jpg" alt=""></a>   
-                    <h3>Merger</h3>
-                    <p>Sáp nhập</p>
-                </div>
-                <div class=" Portfolio-box printdesign">
-                    <a href="#"><img src="img/Portfolio-pic1.jpg" alt=""></a>   
-                    <h3>Acquisitions</h3>
-                    <p>Mua lại</p>
-                </div>
-               
-    </div>
-</section><!--main-section-end-->
-
-<script id="hidden-template" type="text/x-custom-template">
-     <div class="team-leader-box">
-        <div class="team-leader wow fadeInDown delay-09s"> 
-            <div class="team-leader-shadow" data-toggle="modal" data-target="#team-member-member_id"><a href="#"></a></div>
-                <img src="member_picture" alt="">
-            <ul>
-               <li><a href="#" data-toggle="modal" class="lead-profile" data-target="#team-member-member_id">Thông tin...</a></li>
-            </ul>
-        </div>
-        <h3 class="wow fadeInDown delay-09s">member_displayname</h3>
-        <span class="wow fadeInDown delay-09s">member_shortposition</span>
-    </div>
-    <div class="modal fade contact-form" id="team-member-member_id" tabindex="-1" role="dialog" aria-labelledby="team-member" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="modal-body member-info">
-                        <div class="row">
-                            <div class="col-md-5 col-sm-5">
-                                <figure>
-                                    <div class="team-leader details"> 
-                                        <img src="member_picture" alt="">
-                                    </div>  
-                                </figure>
-                            </div>
-                            <div class="col-md-7 col-sm-7">
-                                <div class="description details">
-                                    <h3><strong class="bold-text">member_fullname</strong></h3>
-                                    <div class="light-text full-pos">member_position</div>
-                                    <div class="about margin-top-small">
-                                        <ul style="padding-left: 19px;">
-                                            <li class="li-leader-details"><span class="leader-details-description">Học vấn:</span>member_education</li>
-                                            <li class="li-leader-details"><span class="leader-details-description">Chuyên môn:</span>member_major</li>
-                                            <li class="li-leader-details"><span class="leader-details-description">Email:</span>member_email</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-</script>
-
-<!-- start Team-->
-<section class="main-section team" id="team"><!--main-section team-start-->
-    <div class="container">
-        <h2>Ban Lãnh Đạo</h2>
-        <h6>Nhiệt tình hỗ trợ - Đam mê công việc - Quyết tâm vượt qua khó khăn - Sáng tạo trong từng sản phẩm - Tương tác với khách hàng và nội bộ anh em - Truyền cảm hứng - Hành động</h6>
-        <div class="team-leader-block clearfix" id="core-team-list">
-           
-        </div>
-    </div>
-</section><!--main-section team-end-->
- <!-- =========================
+    <!-- =========================
        Testimonial
     ============================== -->
+
     <section id="testimonial" class="testimonial padding-large white-color text-center">
         <div class="container">
             <div class="row">
-                <h2 class="what-customer-said-h2">Khách hàng nói về chúng tôi</h2>
+                <h2 class="what-customer-said-h2">BẢN TIN KINH TẾ</h2>
                 <div class="col-md-10 col-md-offset-1">
 
                     <!-- *****  Carousel start ***** -->
                     <div id="testimonial-carousel" class="owl-carousel owl-theme testimonial-carousel">
-
+                        <?php
+                             include 'php_controller/service/RssLoader.php';
+                             $rssLoader = new RssLoader();
+                             $rssList = $rssLoader->loadFeed('http://www.thesaigontimes.vn/rssview/tinnoibat/');
+                             foreach ($rssList as $rssItem) { 
+                        ?>
                         <!-- =========================
                            Single Testimonial item
                         ============================== -->
                         <div class="item margin-bottom-small"> <!-- ITEM START -->
-                            <p class="client-part-haead wow fadeInDown delay-05 animated" style="visibility: visible; animation-name: fadeInDown;">"This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.."</p>
                             <div class="client margin-top-medium clearfix client wow fadeIn delay-05s" >
-                                <img src="img/client-pic1.jpg" class="img-customer" height="100" width="100" alt="Client Image">
-                                <ul class="client-info main-color customer-short-profile">
-                                    <li><strong>John Doe</strong></li><br />
-                                    <li>Co-Founder, Envato</li>
+                                <ul class="client-info main-color customer-short-profile rssfeed-title">
+                                    <li><strong><a href="<?php echo $rssItem->link ; ?>" target="_blank"><?php echo $rssItem->title; ?></strong></li></a><br />
+                                    <li><?php echo $rssItem->pubDate; ?></li>
                                 </ul>
                             </div>
+                            <p class="client-part-haead wow fadeInDown delay-05 animated rssfeed-des" style="visibility: visible; animation-name: fadeInDown;">
+                            <a href="<?php echo $rssItem->link ; ?>" target="_blank">
+                                <?php echo $rssItem->description; ?></p>
+                            </a>
                         </div> <!-- ITEM END -->
+                        <?php } ?>
 
-                        <!-- =========================
-                           Single Testimonial item
-                        ============================== -->
-                       <div class="item margin-bottom-small"> <!-- ITEM START -->
-                            <p class="client-part-haead wow fadeInDown delay-05 animated" style="visibility: visible; animation-name: fadeInDown;">"This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.."</p>
-                            <div class="client margin-top-medium clearfix client wow fadeIn delay-05s" >
-                                <img src="img/client-pic1.jpg" class="img-customer" height="100" width="100" alt="Client Image">
-                                <ul class="client-info main-color customer-short-profile">
-                                    <li><strong>John Doe</strong></li><br />
-                                    <li>Co-Founder, Envato</li>
-                                </ul>
-                            </div>
-                        </div> <!-- ITEM END -->
-
-                        <div class="item margin-bottom-small"> <!-- ITEM START -->
-                            <p class="client-part-haead wow fadeInDown delay-05 animated" style="visibility: visible; animation-name: fadeInDown;">"This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.."</p>
-                            <div class="client margin-top-medium clearfix client wow fadeIn delay-05s" >
-                                <img src="img/client-pic1.jpg" class="img-customer" height="100" width="100" alt="Client Image">
-                                <ul class="client-info main-color customer-short-profile">
-                                    <li><strong>John Doe</strong></li><br />
-                                    <li>Co-Founder, Envato</li>
-                                </ul>
-                            </div>
-                        </div> <!-- ITEM END -->
-
-                        <!-- =========================
-                           Single Testimonial item
-                        ============================== -->
-                        <div class="item margin-bottom-small"> <!-- ITEM START -->
-                            <p class="client-part-haead wow fadeInDown delay-05 animated" style="visibility: visible; animation-name: fadeInDown;">"This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.."</p>
-                            <div class="client margin-top-medium clearfix client wow fadeIn delay-05s" >
-                                <img src="img/client-pic1.jpg" class="img-customer" height="100" width="100" alt="Client Image">
-                                <ul class="client-info main-color customer-short-profile">
-                                    <li><strong>John Doe</strong></li><br />
-                                    <li>Co-Founder, Envato</li>
-                                </ul>
-                            </div>
-                        </div> <!-- ITEM END -->
-
-                        <!-- =========================
-                           Single Testimonial item
-                        ============================== -->
-                        <div class="item margin-bottom-small"> <!-- ITEM START -->
-                            <p class="client-part-haead wow fadeInDown delay-05 animated" style="visibility: visible; animation-name: fadeInDown;">"This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.."</p>
-                            <div class="client margin-top-medium clearfix client wow fadeIn delay-05s" >
-                                <img src="img/client-pic1.jpg" class="img-customer" height="100" width="100" alt="Client Image">
-                                <ul class="client-info main-color customer-short-profile">
-                                    <li><strong>John Doe</strong></li><br />
-                                    <li>Co-Founder, Envato</li>
-                                </ul>
-                            </div>
-                        </div> <!-- ITEM END -->
 
                     </div>
                 </div>
@@ -518,137 +264,249 @@
         </div>
     </section> <!-- *** end Testimonial *** -->
 
+    <section class="main-section paddind" id="id-macr"><!--main-section-start-->
+        <div class="container">
+            <h2>ĐỊNH GIÁ TÀI SẢN</h2>
+            <h6>.</h6>
+          <div class="portfolioFilter">  
+            <ul class="Portfolio-nav wow fadeIn delay-02s">
+                <li><a href="#" data-filter=".m-and-a" >ĐỘNG SẢN</a></li>
+                <li><a href="#" data-filter=".appraisal" >BẤT ĐỘNG SẢN</a></li>
+                <li><a href="#" data-filter=".consult" >THƯƠNG HIỆU</a></li>
+                <li><a href="#" data-filter=".r-and-d" >CỔ PHIẾU</a></li>
+                <li><a href="#" data-filter=".library-macr" >DOANH NGHIỆP</a></li>
+    			 <li><a href="#" data-filter=".library-macr" >TÀI SẢN KHÁC</a></li>
+                <li><a href="#" data-filter=".company-map" >QUY TRÌNH & HỒ SƠ</a></li></a></li>
+            </ul>
+           </div> 
+            
+        </div>
+        <div class="portfolioContainer wow fadeInUp delay-04s">
+                    <div class="Portfolio-box appraisal">
+                        <a href="/macr#service_a_2"><img src="img/Portfolio-pic2.jpg" alt=""></a>   
+                        <h3>Quyền tài sản</h3>
+                        <p>Property rights</p>
+                    </div>
+                    <div class="Portfolio-box appraisal">
+                        <a href="/macr#service_a_2"><img src="img/Portfolio-pic2.jpg" alt=""></a>   
+                        <h3>Động sản</h3>
+                        <p>Personalty</p>
+                    </div>
+                    <div class="Portfolio-box appraisal">
+                        <a href="/macr#service_a_2"><img src="img/macr_RealEstate.jpg" alt=""></a>   
+                        <h3>Bất động sản</h3>
+                        <p>Real estate</p>
+                    </div>
+                    <div class="Portfolio-box appraisal">
+                        <a href="/macr#service_a_2"><img src="img/macr_Brand.jpg" alt=""></a>   
+                        <h3>Thương hiệu</h3>
+                        <p>Brand valuation</p>
+                    </div>
+                    <div class="Portfolio-box appraisal">
+                        <a href="#"><img src="img/macr_StockMarket.jpg" alt=""></a>   
+                        <h3>Chứng khoán</h3>
+                        <p>Stock</p>
+                    </div>
+                    <div class="Portfolio-box appraisal">
+                        <a href="#"><img src="img/macr_OtherAssets.jpg" alt=""></a>   
+                        <h3>Tài sản khác</h3>
+                        <p>Others</p>
+                    </div>
+                    <div class="Portfolio-box library-macr">
+                        <a href="/macr#service_a_5"><img src="img/macr_Data.jpg" alt=""></a>   
+                        <h3>Dữ liệu</h3>
+                        <p>Data</p>
+                    </div>
+    </div>
+    </section><!--main-section-end-->
+
+    <section class="main-section paddind" id="id-dautu" style="background-color: #eeeeee;"><!--main-section-start-->
+        <div class="container">
+            <h2>TƯ VẤN M&A</h2>
+            <h6>Chúng tôi hỗ trợ khách hàng tìm kiếm nhà đầu tư, huy động vốn. Định giá tài sản và doanh nghiệp là thế mạnh của MACR.</h6>
+          <div class="dautuFilter">  
+            <ul class="Portfolio-nav wow fadeIn delay-02s">
+                <li><a href="#" data-filter=".printdesign" >Tư vấn bên Bán</a></li>
+    			<li><a href="#" data-filter=".printdesign" >Tư vấn bên Mua</a></li>
+    			<li><a href="#" data-filter=".printdesign" >Hỗ trợ đầu tư</a></li>
+                <li><a href="#" data-filter=".printdesign" >Chuyên đề</a></li></a></li>
+            </ul>
+           </div> 
+            
+        </div>
+        <div class="dautuContainer wow fadeInUp delay-04s">
+                    <div class=" Portfolio-box printdesign">
+                        <a href="#"><img src="img/Portfolio-pic1.jpg" alt=""></a>   
+                        <h3>Merger</h3>
+                        <p>Sáp nhập</p>
+                    </div>
+                    <div class=" Portfolio-box printdesign">
+                        <a href="#"><img src="img/Portfolio-pic1.jpg" alt=""></a>   
+                        <h3>Acquisitions</h3>
+                        <p>Mua lại</p>
+                    </div>
+                   
+        </div>
+    </section><!--main-section-end-->
+
+    <section class="main-section paddind" id="id-macr"><!--main-section-start-->
+        <div class="container">
+            <h2>KHỞI NGHIỆP</h2>
+            <h6>.</h6>
+          <div class="portfolioFilter">  
+            <ul class="Portfolio-nav wow fadeIn delay-02s">
+                <li><a href="#" data-filter=".m-and-a" >LẬP KẾ HOẠCH</a></li>
+                <li><a href="#" data-filter=".appraisal" >ĐÁNH GIÁ KHẢ THI</a></li>
+                <li><a href="#" data-filter=".consult" >HUY ĐỘNG VỐN</a></li>
+                <li><a href="#" data-filter=".r-and-d" >HỖ TRỢ VỐN</a></li></a></li>
+            </ul>
+           </div> 
+    </div>
+    </section><!--main-section-end-->
+
+    <section class="main-section paddind" id="id-macr" style="background-color: #eeeeee;"><!--main-section-start-->
+        <div class="container">
+            <h2>THƯ VIỆN</h2>
+            <h6>.</h6>
+          <div class="portfolioFilter">  
+            <ul class="Portfolio-nav wow fadeIn delay-02s">
+                <li><a href="#" data-filter=".m-and-a" >TRA CỨU GIÁ</a></li>
+                <li><a href="#" data-filter=".appraisal" >CHUYÊN ĐỀ</a></li>
+                <li><a href="#" data-filter=".consult" >VĂN BẢN</a></li>
+                <li><a href="#" data-filter=".r-and-d" >TIN TỨC</a></li>
+                <li><a href="#" data-filter=".library-macr" >TRÍCH DẪN</a></li></a></li>
+            </ul>
+           </div> 
+       
+    </div>
+    </section><!--main-section-end-->
+
+    <script id="hidden-template" type="text/x-custom-template">
+         <div class="team-leader-box">
+            <div class="team-leader wow fadeInDown delay-09s"> 
+                <div class="team-leader-shadow" data-toggle="modal" data-target="#team-member-member_id"><a href="#"></a></div>
+                    <img src="member_picture" alt="">
+                <ul>
+                   <li><a href="#" data-toggle="modal" class="lead-profile" data-target="#team-member-member_id">Thông tin...</a></li>
+                </ul>
+            </div>
+            <h3 class="wow fadeInDown delay-09s">member_displayname</h3>
+            <span class="wow fadeInDown delay-09s">member_shortposition</span>
+        </div>
+        <div class="modal fade contact-form" id="team-member-member_id" tabindex="-1" role="dialog" aria-labelledby="team-member" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="modal-body member-info">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5">
+                                    <figure>
+                                        <div class="team-leader details"> 
+                                            <img src="member_picture" alt="">
+                                        </div>  
+                                    </figure>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="description details">
+                                        <h3><strong class="bold-text">member_fullname</strong></h3>
+                                        <div class="light-text full-pos">member_position</div>
+                                        <div class="about margin-top-small">
+                                            <ul style="padding-left: 19px;">
+                                                <li class="li-leader-details"><span class="leader-details-description">Học vấn:</span>member_education</li>
+                                                <li class="li-leader-details"><span class="leader-details-description">Chuyên môn:</span>member_major</li>
+                                                <li class="li-leader-details"><span class="leader-details-description">Email:</span>member_email</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </script>
+
+    <!-- start Team-->
+    <section class="main-section team" id="team"><!--main-section team-start-->
+        <div class="container">
+            <h2>Ban Lãnh Đạo</h2>
+            <h6>Đam mê - Kiên trì - Sáng tạo - Truyền cảm hứng - Hành động</h6>
+            <div class="team-leader-block clearfix" id="core-team-list">
+               
+            </div>
+        </div>
+    </section><!--main-section team-end-->
+ 
+
     <!-- =========================
        Why Coose Us
     ============================== -->
-    <section id="why-choose-us" class="why-choose-us">
-        <div class="container margin-top-large">
+    <section id="why-choose-us" class="why-choose-us main-section" style="background-color: #eeeeee;">
+        <div class="container">
             <h2>
-                <span>Tại sao bạn chọn chúng tôi?</span>
+                <span>LIÊN HỆ VỚI CHÚNG TÔI</span>
             </h2>
 
-            <div class="row text-center">
-
-                <!-- *****  Service Single ***** -->
-                <div class="col-md-4">
-                    <div class="service wow slideInLeft">
-                        <div class="icon"><i class="icon-idea"></i></div>
-                        <h4>Sáng tạo <strong>sản phẩm mới</strong></h4>
-                        <p>Suspendisse velit ticol sodales, viverra sigirton vitae, accumsan orci mauris nec</p>
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-lg-6 col-sm-7 wow fadeInLeft">
+                    <?php 
+                        include 'php_controller/service/ContactService.php';
+                        $contactService = new ContactService();
+                        $contact = $contactService->findById("1");                                  
+                    ?>
+                    <div class="contact-info-box address clearfix">
+                        <h3><i class="fa-map-marker"></i>Trụ sở:</h3>
+                        <span><?php echo $contact["adress"]; ?></span>
                     </div>
-                </div>
-
-                <!-- *****  Service Single ***** -->
-                <div class="col-md-4">
-                    <div class="service wow fadeInUp">
-                        <div class="icon"><i class="icon-heart"></i></div>
-                        <h4>Trân trọng <strong>khách hàng</strong></h4>
-                        <p>Suspendisse velit ticol sodales, viverra sigirton vitae, accumsan orci mauris nec</p>
+                    <div class="contact-info-box phone clearfix">
+                        <h3><i class="fa-phone"></i>Điện thoại:</h3>
+                        <span><?php echo $contact["phone"]; ?></span>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service wow slideInRight">
-                        <div class="icon"><i class="icon-office"></i></div>
-                        <h4><strong>Trung thực</strong>Tư vấn</h4>
-                        <p>Suspendisse velit ticol sodales, viverra sigirton vitae, accumsan orci mauris nec</p>
+                    <div class="contact-info-box email clearfix">
+                        <h3><i class="fa-pencil"></i>Email:</h3>
+                        <span><?php echo $contact["email"]; ?></span>
                     </div>
-                </div>
-
-                <!-- *****  Service Single ***** -->
-                <div class="col-md-4">
-                    <div class="service wow slideInLeft">
-                        <div class="icon"><i class="icon-mobile"></i></div>
-                        <h4><strong>Chuyên nghiệp</strong>nhân viên</h4>
-                        <p>Suspendisse velit ticol sodales, viverra sigirton vitae, accumsan orci mauris nec</p>
+                    <div class="contact-info-box hours clearfix">
+                        <h3><i class="fa-clock-o"></i>Giờ làm việc:</h3>
+                        <span><strong>Thứ 2 - Thứ 6:</strong> <?php echo $contact["workingtimenormal"]; ?><br><strong>Thứ 7 - Chủ nhật:</strong> <?php echo $contact["workingtimeweeken"]; ?></span>
                     </div>
+                    <ul class="social-link">
+                        <li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
+                        <li class="facebook"><a href="#"><i class="fa-facebook"></i></a></li>
+                        <li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
+                        <li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
+                        <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li>
+                    </ul>
                 </div>
-
-                <!-- *****  Service Single ***** -->
-                <div class="col-md-4">
-                    <div class="service wow fadeInUp">
-                        <div class="icon"><i class="icon-code"></i></div>
-                        <h4><strong>Sản phẩm</strong> thân thiện</h4>
-                        <p>Suspendisse velit ticol sodales, viverra sigirton vitae, accumsan orci mauris nec</p>
-                    </div>
+                <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+                    <div class="form">
+                        <form id="form-contact">
+                            <input class="input-text contact-input" type="text" name="contactName" id="contactName" placeholder="Tên của Bạn *" />
+                            <input class="input-text contact-input" type="text" name="contactPhone" id="contactPhone" placeholder="Số điện thoại *" />
+                            <input class="input-text contact-input" type="text" name="contactMail" id="contactMail" placeholder="E-mail của Bạn *" />
+                            <textarea class="input-text text-area contact-input" name="contactMessage" id="contactMessage" cols="0" rows="0" placeholder="Nội dung liên hệ *"></textarea>
+                            <div class="captcha-confirm">
+                                <img id="captcha_code" class="img-captcha" src="php/captcha_code.php" />
+                                <input class="input-text-captcha contact-input" type="text" name="captcha" id="captcha" placeholder="Mã xác nhận *" />
+                                <button type="button" class="input-btn-captcha">mã khác</button>
+                            </div>
+                           
+                            <input class="input-btn not-active" id="btn-submit-contact" type="submit" value="Gửi tới MACRGROUP" />
+                            <span class="result-contact-message" style="display: none;"></span>
+                        </form>
+                    </div>  
                 </div>
-
-                <!-- *****  Service Single ***** -->
-                <div class="col-md-4">
-                    <div class="service wow slideInRight">
-                        <div class="icon"><i class="icon-web-browser"></i></div>
-                        <h4><strong>Giá trị</strong> Bền vững</h4>
-                        <p>Suspendisse velit ticol sodales, viverra sigirton vitae, accumsan orci mauris nec</p>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div> <!-- *** end row *** -->
+            </div>
         </div> <!-- *** end container *** -->
     </section> <!-- *** end Why Choose Us *** -->
 
-<section class="business-talking"><!--business-talking-start-->
-    <div class="container">
-        <h2>Trên mặt đất vốn làm gì có đường. Người ta đi mãi thì thành đường thôi. - Lỗ Tấn -</h2>
-    </div>
-</section><!--business-talking-end-->
-<div class="container bot-footer">
-<section class="main-section contact" id="contact">
-    
-        <div class="row">
-            <div class="col-lg-6 col-sm-7 wow fadeInLeft">
-                <?php 
-                    include 'php_controller/service/ContactService.php';
-                    $contactService = new ContactService();
-                    $contact = $contactService->findById("1");                                  
-                ?>
-                <div class="contact-info-box address clearfix">
-                    <h3><i class="fa-map-marker"></i>Địa chỉ:</h3>
-                    <span><?php echo $contact["adress"]; ?></span>
-                </div>
-                <div class="contact-info-box phone clearfix">
-                    <h3><i class="fa-phone"></i>Điện thoại:</h3>
-                    <span><?php echo $contact["phone"]; ?></span>
-                </div>
-                <div class="contact-info-box email clearfix">
-                    <h3><i class="fa-pencil"></i>Email:</h3>
-                    <span><?php echo $contact["email"]; ?></span>
-                </div>
-                <div class="contact-info-box hours clearfix">
-                    <h3><i class="fa-clock-o"></i>Giờ làm việc:</h3>
-                    <span><strong>Thứ 2 - Thứ 6:</strong> <?php echo $contact["workingtimenormal"]; ?><br><strong>Thứ 7 - Chủ nhật:</strong> <?php echo $contact["workingtimeweeken"]; ?></span>
-                </div>
-                <ul class="social-link">
-                    <li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
-                    <li class="facebook"><a href="#"><i class="fa-facebook"></i></a></li>
-                    <li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
-                    <li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
-                    <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li>
-                </ul>
-            </div>
-            <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-                <div class="form">
-                    <form id="form-contact">
-                        <input class="input-text contact-input" type="text" name="contactName" id="contactName" placeholder="Tên của Bạn *" />
-                        <input class="input-text contact-input" type="text" name="contactPhone" id="contactPhone" placeholder="Số điện thoại *" />
-                        <input class="input-text contact-input" type="text" name="contactMail" id="contactMail" placeholder="E-mail của Bạn *" />
-                        <textarea class="input-text text-area contact-input" name="contactMessage" id="contactMessage" cols="0" rows="0" placeholder="Nội dung liên hệ *"></textarea>
-                        <div class="captcha-confirm">
-                            <img id="captcha_code" class="img-captcha" src="php/captcha_code.php" />
-                            <input class="input-text-captcha contact-input" type="text" name="captcha" id="captcha" placeholder="Mã xác nhận *" />
-                            <button type="button" class="input-btn-captcha">mã khác</button>
-                        </div>
-                       
-                        <input class="input-btn not-active" id="btn-submit-contact" type="submit" value="Gửi tới MACRGROUP" />
-                        <span class="result-contact-message" style="display: none;"></span>
-                    </form>
-                </div>  
-            </div>
-        </div>
-</section>
 
 <footer class="footer">
     <div class="container">
         <div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
-        <span class="copyright">Bản quyền thuộc về CTCP MACRGROUP BROTHERS - Đ/c: Số 16 đường số 4, P.8, Q.11, Tp.HCM|Giấy phép số:0314035148|Hotline: 0902038558| Made by <a href="#">Thành Trần</a></span>
+        <span class="copyright">Bản quyền thuộc về CÔNG TY CỔ PHẦN MACRGROUP BROTHERS - Số 16 đường số 4, P.8, Q.11, Tp.HCM|GP ĐKKD:0314035148
     </div>
     <!-- 
         All links in the footer should remain intact. 

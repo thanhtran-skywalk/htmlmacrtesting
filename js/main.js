@@ -3,6 +3,7 @@ $(document).ready(function () {
   /* ========================================================================
     Testimonial Carousel
    ========================================================================== */
+
   var testimonialCarousel = $("#testimonial-carousel");
   testimonialCarousel.owlCarousel({
     autoPlay : 3000,
@@ -264,4 +265,6 @@ $(window).load(function(){
     }
 
     getList();
+
+
 });
